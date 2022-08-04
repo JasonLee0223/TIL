@@ -1,0 +1,19 @@
+# ViewController LifeCycle
+ViewController의 생명 주기는 Scene(장면)의 전환과 복귀에 밀접하게 연관되어 있다.   
+일반적으로 `새로운 장면으로 전환`하거나 `이전 화면으로 복귀하는 과정`에서 ViewController의 `객체의 생성과 소명이 발생`하기 때문이다.
+
+아래와 순서로 ViewController의 생명주기는 이와 같은 과정을 순홚나다.
+1. 앱을 처음 실행하거나 새로운 장면으로 전환할 때에는 그 장면을 담당하는 ViewController 객체가 새로 생성된다.
+2. 생성된 객체는 메모리에 로드되어 자신의 역할을 하고 주어진 역할을 모두 마치면 앱은 이전 장면으로 복귀한다.
+3. 생성되었던 ViewController 객체는 메모리에서 해제되면서 소멸한다.
+4. 필요에 의해 이전 장면으로 다시 전환할 경우, ViewController 객체는 이미 소멸된 후이기 때문에 다시 새롭게 생성되고, 역할을 끝내고나면 다시 소멸된다.
+
+## ViewController 상태 변화에 따른 API
+- Appearing: ViewController가 스크린에 등장하기 시작한 순간부터 등장을 완료하기 직전까지의 상태
+- Appeared: ViewController가 스크린 전체에 완전히 등장한 상태를 나타낸다.
+- Disappearing: ViewController가 스크린에서 가려지기 시작해서 완전히 가려지기 직전까지의 상태. 또는 퇴장하기 시작해서 완전히 퇴장하기 직전까지의 상태.
+- Disappeared: ViewController가 스크린에서 완전히 가려졌거나 혹은 퇴장한 상태
+
+### 🌐 참고사이트   
+꼼꼼한 재은씨의 Swift기본편(p108~114)
+
