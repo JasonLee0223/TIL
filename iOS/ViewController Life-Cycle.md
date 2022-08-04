@@ -54,6 +54,6 @@ func viewDidDisappear(_ animated: Bool)
 [iOS ) View Controller의 생명주기(Life-Cycle)](https://zeddios.tistory.com/43)   
 [Swift - ViewController Life Cycle(생명주기)](https://tono18.tistory.com/11)   
 [Swift - ViewController Life Cycle(생명주기)02](https://tono18.tistory.com/20)   
-
+[[iOS 앱 개발 - Swift] 뷰의 상태변화 감지](https://etst.tistory.com/90)
 
 
