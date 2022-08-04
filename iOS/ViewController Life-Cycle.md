@@ -12,9 +12,48 @@ ViewController의 생명 주기는 Scene(장면)의 전환과 복귀에 밀접�
 - Appearing: ViewController가 스크린에 등장하기 시작한 순간부터 등장을 완료하기 직전까지의 상태
 - Appeared: ViewController가 스크린 전체에 완전히 등장한 상태를 나타낸다.
 - Disappearing: ViewController가 스크린에서 가려지기 시작해서 완전히 가려지기 직전까지의 상태. 또는 퇴장하기 시작해서 완전히 퇴장하기 직전까지의 상태.
-- Disappeared: ViewController가 스크린에서 완전히 가려졌거나 혹은 퇴장한 상태
+- Disappeared: ViewController가 스크린에서 완전히 가려졌거나 혹은 퇴장한 상태   
+
+## ViewController Life Cycle 
+<img src = "https://user-images.githubusercontent.com/92699723/182879205-2561325b-9640-4c69-bc4f-aac998f3bec3.jpeg" width=300 height=400>   
+
+[이미지 출처](https://subscription.packtpub.com/book/application-development/9781783550814/6/ch06lvl1sec60/uiviewcontroller-lifecycle-methods)
+
+<img src = "https://user-images.githubusercontent.com/92699723/182880648-626cf83a-81e2-4095-8b27-c80539127869.png" width=500 height=500>   
+
+[[이미지 출처] [iOS]View의 Life-Cycle](https://do-misol.tistory.com/48)   
+
+### 각 메서드별로 설명
+```Swift
+func viewDidLoad()
+``` 
+뷰 게층이 **메모리에 Load된 직후 호출되는 메서드**
+`메모리에 처음 로딩될 때 1회 호출`되는 메서드
+```Swift
+func viewWillAppear(_ animated: Bool)
+```
+**화면에 표시되기 직전**에 호출되는 메서드
+`다른 뷰로 이동했다가 되돌아오면 다시 호출`되는 메서드
+```Swift
+func viewDidAppear(_ animated: Bool)
+```
+**화면에 표시되고 나면**호출되는 메서드
+뷰를 나타내는 것과 관련된 추가적인 작업을 하기 좋은 시점
+```Swift
+func viewWillDisappear(_ animated: Bool)
+```
+뷰가 뷰 계층에서 **사라지기 직전**에 호출되는 메서드
+뷰가 생성된 뒤 발생한 변화를 이전 상태로 되돌리기 좋은 시점
+```Swift
+func viewDidDisappear(_ animated: Bool)
+```
+뷰가 뷰 계층에서 **사라진 후**호출되는 메서드
 
 ### 🌐 참고사이트   
-꼼꼼한 재은씨의 Swift기본편(p108~114)
+꼼꼼한 재은씨의 Swift기본편(p108~114)   
+[iOS ) View Controller의 생명주기(Life-Cycle)](https://zeddios.tistory.com/43)   
+[Swift - ViewController Life Cycle(생명주기)](https://tono18.tistory.com/11)   
+[Swift - ViewController Life Cycle(생명주기)02](https://tono18.tistory.com/20)   
+
 
 
