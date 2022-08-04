@@ -8,5 +8,5 @@
 ## iOS
 - [UIAction](iOS/UIAction.md)
 - [UIButton + addTarget](iOS/UIButton%20+%20addTarget.md)
-- [UIImageVIew](iOS/UIImageView.md)
+- [UIImageView](iOS/UIImageView.md)
 - [ViewController Life-Cycle](iOS/ViewController%20Life-Cycle)
