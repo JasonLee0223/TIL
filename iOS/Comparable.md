@@ -24,3 +24,8 @@ public protocol Comparable: Equatable {
 }
 ```
 **Comparable을 직접 채택하고 필요시 구현도 해주어야**우리가 직접 만드는 Struct/Class/enum을 대소 비교 연산을 사용할 수 있게된다.
+
+### 🌐 참고사이트   
+[Swift) Comparable에 대해 알아보자](https://babbab2.tistory.com/150)   
+[Swift의 기본 프로토콜 세 가지: Equatable, Comparable, Printable](http://seorenn.blogspot.com/2014/08/swift-equatable-comparable-printable.html)   
+[Apple-Developer[Comparable]](https://developer.apple.com/documentation/swift/comparable)
