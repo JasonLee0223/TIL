@@ -77,7 +77,7 @@ let device2 = Device.noteBook
  
 device == device2   // true
 ```
-
+<span style="color:yellow">글자색 테스트</span>
 
 ### 🌐 참고사이트   
 [Swift) Equatable에 대해 알아보자](https://babbab2.tistory.com/148?category=828998)
