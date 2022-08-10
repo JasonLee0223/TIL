@@ -1,7 +1,7 @@
 # Equatable
 Comparable을 먼저 접하였는데 학습 과정에서 Comparable 프로토콜은 먼저 Equtable을 채택되어있다는 사실을 알게되어 학습하게되었다.
 
-### <span style="color:yellow"> Equatable이란?
+### <span style="color:yellow">Equatable이란?</span>
 Equatable은 타입끼리 비교(==)연산을 하기 위해서 필수적으로 구현해야하는 프로토콜이다.   
 ```Swift
 publice protocol Equatable {
