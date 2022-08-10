@@ -2,7 +2,7 @@
 그동안 프로젝트를 빌드하였을 때 시뮬레이터만 거의 사용하여 확인하였다가 이번에 Shake Event를 사용하게되어 실제 기기에 연결하였을때 겪었던 내용을 바탕으로 정리하였다.
 
 ## Build Fail
-실제 기기에 연결하여 홈화면에 아이콘이 다운로드되고 신뢰할 수 없다는 에러 메세지를 마주치게된다.
+실제 기기에 연결하여 홈화면에 아이콘이 다운로드되고 신뢰할 수 없다는 에러 메세지를 마주치게된다.   
 <img src = "https://user-images.githubusercontent.com/92699723/183831292-fbd159f1-09d8-4452-8248-bb35374cce31.jpg" width="300" height="300">   
 <img src = "https://user-images.githubusercontent.com/92699723/183831326-0167b808-cf0b-45a3-a835-f6d78104e1c1.png" width="600" height="400">
 
