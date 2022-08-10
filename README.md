@@ -14,3 +14,6 @@
 
 ## Swift
 - [@escaping Closure](Swift/@escaping%20closure.md)
+
+## Project - Setting
+- [Device Setting](Project-Setting/Device%20Setting.md)
