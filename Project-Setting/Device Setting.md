@@ -23,5 +23,11 @@ The operation couldn’t be completed. Unable to launch opendoorLife.NavigationB
 <img src = "https://user-images.githubusercontent.com/92699723/183835649-ad0020b0-875d-4c2a-80ad-71fdbcfe7f88.jpg" width="400" height="500">   
 <img src = "https://user-images.githubusercontent.com/92699723/183835640-b54a8181-69e5-4c63-b874-468279ec705f.jpg" width="400" height="300">   
 
+## 실제기기(아이폰)에서 시뮬레이터 화면 녹화하기
+어플을 사용할 수 있지만 기존에 맥에 내장되어있는 QuickTime Player를 사용하여 녹화할 수 있다.
+여기서 주의할 점이 **현재 맥미니를 사용하는데 외부캠을 사용하다보니 연결되어있으면 아이폰을 인식하지 못하는 현상이 발생했었다.**   
+하여 맥미니에서 캠을 연결해제(포트에서 제거)한 후 작동하여보니 잘되었다.
+
 ### 🌐 참고사이트   
 [Xcode :: 실제 디바이스 빌드 실패 해결 (Invalid code signature, inadequate entitlements or its profile has not been explicitly trusted by the user)](https://opendoorlife.tistory.com/11)   
+[[iOS] Xcode 시뮬레이터 녹화하기, 아이폰 화면 녹화하기 (동영상, GIF로 저장하기)](https://lxxyeon.tistory.com/35)
