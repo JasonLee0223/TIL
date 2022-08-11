@@ -6,6 +6,7 @@
 - [Half-Adder](CS10/Half-Adder.md)
 
 ## iOS
+- [VC간의 데이터 전송방법](iOS/Data%20Transfer%20Process.md)
 - [UIAction](iOS/UIAction.md)
 - [UIButton + addTarget](iOS/UIButton%20+%20addTarget.md)
 - [UIImageView](https://github.com/JasonLee0223/TIL/blob/main/iOS/UIImageVIew.md)
