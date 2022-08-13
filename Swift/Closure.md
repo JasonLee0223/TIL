@@ -76,38 +76,43 @@ closure(name: "Sodeul") // error!
    ```
    위처럼 `클로저를 리턴`할 수 있다.
       
-## **후행 클로저(trailing closure) → 많이 쓰임**
-- 클로저가 함수의 마지막 argument라면 마지막 매개변수명(cl)을 생략한 후 함수 **소괄호 외부에**
-클로저를 작성
+## **후행 클로저(trailing closure)**
+>`클로저`가 함수의 마지막 Parameter라면   
+이를 파라미터 값 형식이 아닌 함수 뒤에 붙여 작성하는 문법   
+이때, Argument Label은 생략된다
 
-```swift
-func someFun(cl: **() -> Void**) {
+### 1. Parameter가 클로저 하나인 함수
+```Swift
+func doSomething(closure: () -> ()) {
+    closure()
 }
-//trailing closure를 사용 안하면   
-someFun(cl: {
-	// closure's body
+```
+위 함수를 호출하기 위해서는 아래와 같이 작성해야했다.
+```Swift
+doSomething(closure: { () -> () in
+    print("Hello!")
 })
+```
+`함수 호출 구문()`에 클로저가 파라미터의 값 형식으로 작성되어야한다.   
+이러한 방식을 `Inline Closure`라고 부른다.   
+하지만 위 방식은 좀처럼 보기가 힘들어 Trailing Closure 표현식을 사용하면   
+```Swift
+doSomething() { () -> () in
+    print("Hello!")
+}
 
-// **trailing closure 사용**
-someFun() {
-	// trailing closure's body goes here
+// 조금 더 진화해서 호출() 부분도 생략가능하다.
+doSomething{ () -> () in
+    print("Hello!")
 }
 ```
+이렇게 표현할 수 있다.   
 
-```swift
-/* trailing closure 예제 */
-let onAction = UIAlertAction(title: "On", style: 
-UIAlertAction.Style.default) {
-	ACTION in self.lampImg.image = self.imgOn
-	self.isLampOn = true
-}
-let removeAction = UIAlertAction(title: "제거", style:
-UIAlertAction.Style.destructive, handler: {
-	ACTION in self.lampImg.image = self.imgRemove
-	self.isLampOn = false
-}
-```
+여기서 중요한 핵심!
+1. 파라미터가 `클로저 하나`일 경우, 이 클로저는 `첫 파라미터이자 마지막 파라미터`이므로 트레일링 클로저가 가능
+2. "closure"라는 ArgumentLabel은 트레일링 클로저에선 생략됨   
 
-  ### 🌐 참고사이트   
-  [Swift) 클로저(Closure) 정복하기(1/3) - 클로저, 누구냐 넌](https://babbab2.tistory.com/81)   
-  [Swift) 클로저(Closure) 정복하기(2/3) - 문법 경량화 / @escaping / @autoclosure](https://babbab2.tistory.com/82)
+
+### 🌐 참고사이트   
+[Swift) 클로저(Closure) 정복하기(1/3) - 클로저, 누구냐 넌](https://babbab2.tistory.com/81)   
+[Swift) 클로저(Closure) 정복하기(2/3) - 문법 경량화 / @escaping / @autoclosure](https://babbab2.tistory.com/82)
