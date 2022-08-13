@@ -15,7 +15,7 @@
 - [Comparable](iOS/Comparable.md)
 
 ## Swift
-- [@escaping Closure](Swift/@escaping%20closure.md)
+- [@escaping Closure](Swift/@escaping%20closure.md) -> 미완료
 - [First-Class Citizen(1급 객체)](Swift/First-Class%20Citizen.md)
 
 ## Project - Setting
