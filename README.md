@@ -17,6 +17,7 @@
 ## Swift
 - [@escaping Closure](Swift/@escaping%20closure.md) -> 미완료
 - [First-Class Citizen(1급 객체)](Swift/First-Class%20Citizen.md)
+- [[Functional programming] Closure Syntax](Swift/@escaping%20closure.md)
 
 ## Project - Setting
 - [Device Setting](Project-Setting/Device%20Setting.md)
