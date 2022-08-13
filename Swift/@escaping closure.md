@@ -31,9 +31,18 @@ func doSomethingEnd(closure: @escaping () -> ()) {
 doSomethingEnd { print("closure") }
 ```
 
+## 클로저에서 @escaping 키워드를 붙이는 상황은?
+```Swift
+Error) Escaping closure captures non-escaping parameter 'completion'
+```
+위 에러는 일반적으로 아무런 키워드 없이 파라미터로 받는 클로저는 모두 **non-escaping closure**이었고 이름 그래도 탈출이 불가능한 클로저란 뜻이다.
+> 함수의 **'흐름'** 을 탈출하지 않는 클로저라는 뜻으로,
+> 함수가 종료되고 나서 클로저가 실행될 수 없다는 말이다.
+> 함수가 종료될 때, 클로저의 사용도 같이 종료되어서 같이 종료되어야한다는 뜻이다.
+
 ## ⚠️주의할 점
 ### 메모리 관리
 
 ### 🌐 참고사이트   
-
 [Swift) 클로저(Closure) 정복하기(2/3) - 문법 경량화 / @escaping / @autoclosure](https://babbab2.tistory.com/82)   
+[Swift) closure와 @escaping 이해하기](https://babbab2.tistory.com/164)
