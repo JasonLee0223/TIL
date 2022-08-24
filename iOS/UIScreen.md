@@ -17,7 +17,7 @@ iOS8 이상에서 화면 속성은 화면의 인터페이스 방향을 고려합
 UIScreen.main.bounds를 통해 기기별 해상도(픽셀) 또는 인치(inch)를 구할 수 있는데 여기서 말하는 main이 정확히 어떤 걸 의미하는지 파악이 잘되지않아 찾아보게되었다.   
 main은 이제 WWDC2022에서부터 `Deprecated`로 분류되어 잘사용하지 않게되는 것 같지만 아직까지 처음 iOS를 접할 때 많이 보게되었다.   
 **main은 장치의 화면을 나타내는 화면 개체를 반환한다.**
-<img src= "https://user-images.githubusercontent.com/92699723/186509428-3e8bf8a2-259c-4194-9c53-cd6c09d0dcb5.png" width="650" height="450">
+<img src= "https://user-images.githubusercontent.com/92699723/186509428-3e8bf8a2-259c-4194-9c53-cd6c09d0dcb5.png" width="650" height="450">   
 
 ### 자주사용되는 UIScreen Property
 좌표 공간 얻기
