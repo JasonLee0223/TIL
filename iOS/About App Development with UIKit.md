@@ -43,19 +43,55 @@ App Bundle들은 앱과 관련된 코드와 리소스를 포함하는 구조화�
 
 
 ## 🟢 App and Environment
+> Life-cycle events와 앱의 UI scenes을 관리하고 앱이 실행되는 특성 및 환경에 대한 정보를 얻습니다.
 
+iOS 13 이상에서 사용자는 앱 사용자 인터페이스의 여러 인스턴스를 동시에  생성 및 관리하고 `App switch`를 사용하여 인스턴스 간에 전환할 수 있습니다.  
+UIKit은 장치 설정, 인터페이스 설정 및 사용자 기본 설정의 조합을 반영하는 특성 컬렉션을 사용하여 현재 환경에 대한 세부 정보를 전달합니다.    
+- 현재 환경을 기반으로 콘텐츠를 사용자 정의하려는 경우 `UIView` 또는 `UIViewController` 개체의 현재 특성 컬렉션을 참조합니다.   
+- 다른 객체가 특성(trait) 알림 변경 사항을 수신하도록 하려면 [UITraitEnvironment](https://developer.apple.com/documentation/uikit/uitraitenvironment)프로토콜을 채택합니다.
 ### ✔️ Life-Cycle
+#### [Managing Your App's Life Cycle](https://developer.apple.com/documentation/uikit/app_and_environment/managing_your_app_s_life_cycle)
+
+#### [Responding th the Launch of Your App](https://developer.apple.com/documentation/uikit/app_and_environment/responding_to_the_launch_of_your_app)
+
+- class [UIApplication](https://developer.apple.com/documentation/uikit/uiapplication)
+
+- protocol [UIApplicationDelegate](https://developer.apple.com/documentation/uikit/uiapplicationdelegate)
+
+- [Scenes](https://developer.apple.com/documentation/uikit/app_and_environment/scenes)
 
 ### ✔️ iPad
+#### [Building a desktop-class iPad app](https://developer.apple.com/documentation/uikit/app_and_environment/building_a_desktop-class_ipad_app)
+
+#### [Supporting desktop-class features in your iPad app](https://developer.apple.com/documentation/uikit/app_and_environment/supporting_desktop-class_features_in_your_ipad_app)
+
+- [Multitasking on iPad](https://developer.apple.com/documentation/uikit/app_and_environment/multitasking_on_ipad)
 
 ### ✔️ Device Environment
+- class [UIDevice](https://developer.apple.com/documentation/uikit/uidevice)
+
+- class [UIStatusBarManager](https://developer.apple.com/documentation/uikit/uistatusbarmanager)
 
 ### ✔️ Adaptivity
+#### [Responding to Changing Display Modes on Apple TV](https://developer.apple.com/documentation/uikit/app_and_environment/responding_to_changing_display_modes_on_apple_tv)
+- class [UITraitCollection](https://developer.apple.com/documentation/uikit/uitraitcollection)
+
+- protocol [UITraitEnvironment](https://developer.apple.com/documentation/uikit/uitraitenvironment)
+
+- protocol [UIAdaptivePresentationControllerDelegate](https://developer.apple.com/documentation/uikit/uiadaptivepresentationcontrollerdelegate)
+  
+- protocol [UIContentContainer](https://developer.apple.com/documentation/uikit/uicontentcontainer)
 
 ### ✔️ Guided Access
+- protocol [UIGuideedAccessRestrictionDelegate](https://developer.apple.com/documentation/uikit/uiguidedaccessrestrictiondelegate)
+
+- static func [guidedAccessRestrictionState(forIndentifier: String)](https://developer.apple.com/documentation/uikit/uiaccessibility/1621153-guidedaccessrestrictionstate) -> UIAccessibility.GuidedAccessRestrictionState
 
 ### ✔️ Architecture
+[Updating Your App from 32Bit to 64Bit Architecture](https://developer.apple.com/documentation/uikit/app_and_environment/updating_your_app_from_32-bit_to_64-bit_architecture)
 
+- func [UIApplicationMain](https://developer.apple.com/documentation/uikit/1622933-uiapplicationmain)(Int32, UnsafeMutablePointer<UnsafeMutablePointer<CChar>?>, String?, String?) -> Int32
 
+### 🌐 참고사이트   
 [About App Development with UIKit | Apple Developer Documentation](https://developer.apple.com/documentation/uikit/about_app_development_with_uikit)    
 [App and Environment | Apple Developer Documentation](https://developer.apple.com/documentation/uikit/app_and_environment)
