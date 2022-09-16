@@ -1,6 +1,7 @@
-# UIButton + addTarget
+# UIButton
 PockerGame 프로젝트를 진행하면서 UIButton의 sender를 통해 사용자의 Touch Event에 대해
 처리하는 addTarget을 사용해보게되었다.
+
 ## addTarget Method
 ```Swift
 func addTarget(
@@ -64,3 +65,4 @@ self.addSubview(sevenStudButton)
 [ERROR) UIButton.addTarget이 작동 안 될 때 In Code](https://hururuek-chapchap.tistory.com/165)   
 [[iOS]addTarget, @objc, #selector](https://hyunndyblog.tistory.com/161)
 [Apple Developer Site](https://developer.apple.com/documentation/uikit/uicontrol/1618259-addtarget)
+[[iOS] UIButton Configuration 사용해보기 in iOS 15](https://velog.io/@wannabe_eung/iOS-UIButton-Configuration-%EC%82%AC%EC%9A%A9%ED%95%B4%EB%B3%B4%EA%B8%B0-in-iOS-15)
