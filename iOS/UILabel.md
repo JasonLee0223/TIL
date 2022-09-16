@@ -63,6 +63,6 @@
 
 
 ### 🌐 참고사이트
-[UIScreen | Apple Developer Documentation](https://developer.apple.com/documentation/uikit/uilabel)   
+[UILabel | Apple Developer Documentation](https://developer.apple.com/documentation/uikit/uilabel)   
 [[iOS] UIButton, UISlider, UILabel](https://kingso.netlify.app/posts/boostcourse-project1-UIButton/)
 
