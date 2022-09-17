@@ -59,7 +59,14 @@ var titlePadding: CGFloat
 var titleAlignment: UIButton.Configuration.TitleAlignment
 
 // 문자열의 시각적 모양에 영향을 줄 수 있는 텍스트 변환을 정의합니다.
-struct UIConfigurationTextAttributesTransformer
+struct UIConfigurationTextAttributesTransformer { 
+    let transformer = UIConfigurationTextAttributesTransformer { incoming in
+    var outgoing = incoming
+    outgoing.foregroundColor = UIColor.black
+    outgoing.font = UIFont.boldSystemFont(ofSize: 20)
+    return outgoing
+    }
+}
 
 // 버튼 상태가 변경될 때 속성이 지정된 title을 업데이트하는 구조
 var titleTextAttributesTransformer: UIConfigurationTextAttributesTransformer?
@@ -68,7 +75,12 @@ var titleTextAttributesTransformer: UIConfigurationTextAttributesTransformer?
 var subtitleTextAttributesTransformer: UIConfigurationTextAttributesTransformer?
 
 // 버튼의 title과 subtitle을 정렬하는 방법을 지정
-enum UIButton.Configuration.TitleAlignment
+enum UIButton.Configuration.TitleAlignment { 
+    case automatic
+    case center
+    case leading
+    case trailing
+}
 ```
 
 ## Configuration images
@@ -94,7 +106,12 @@ var preferredSymbolConfigurationForImage: UIImage.SymbolConfiguration?
 var buttonSize: UIButton.Configuration.Size
 
 // 버튼 요소에 대해 미리 정의된 크기입니다.
-enum UIButton.Configuration.Size
+enum UIButton.Configuration.Size { 
+    case large
+    case medium
+    case small
+    case mini
+}
 
 // 버튼의 콘텐츠 영역에서 경계까지의 거리입니다.
 var contentInsets: NSDirectionalEdgeInsets
@@ -121,7 +138,14 @@ var background: UIBackgroundConfiguration
 var cornerStyle: UIButton.Configuration.CornerStyle
 
 // 배경 모서리 반경의 모양을 결정하는 설정입니다.
-enum UIButton.Configuration.CornerStyle
+enum UIButton.Configuration.CornerStyle {
+    case dynamic
+    case fixed
+    case capsule
+    case large
+    case medium
+    case small
+}
 ```
 
 ## Configuration the indicator
