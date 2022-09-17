@@ -9,7 +9,6 @@
 - [UIKit 설명, App and Environment](iOS/About%20App%20Development%20with%20UIKit.md)
 - [VC간의 데이터 전송방법](iOS/Data%20Transfer%20Process.md)
 - [Logger & OS_Log](iOS/Logger%20&%20OS_Log.md)
-- [Frame vs Bounds](iOS/Frame%20vs%20Bounds.md)
 - [UIAction](iOS/UIAction.md)
 - [UILabel](iOS/UILabel.md)
 - [UIButton](iOS/UIButton.md)
@@ -18,6 +17,8 @@
 - [ViewController Life-Cycle](iOS/ViewController%20Life-Cycle.md)
 - [Equatable](iOS/Equatable.md)
 - [Comparable](iOS/Comparable.md)
+- [Frame vs Bounds](iOS/Frame%20vs%20Bounds.md)
+- [CGPoint, CGSize, CGRect](iOS/CGPoint,CGSize,CGRect.md)
 - [UIScreen](iOS/UIScreen.md)
 - [UIStackView](iOS/UIStackView.md)
 
