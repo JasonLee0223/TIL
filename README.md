@@ -13,6 +13,7 @@
 - [UILabel](iOS/UILabel.md)
 - [UIButton](iOS/UIButton.md)
 - [UIButton.Configuration](iOS/UIButton.Configuration.md)
+- [UISlider](iOS/UISlider.md)
 - [UIImageView](https://github.com/JasonLee0223/TIL/blob/main/iOS/UIImageVIew.md)
 - [ViewController Life-Cycle](iOS/ViewController%20Life-Cycle.md)
 - [Equatable](iOS/Equatable.md)
