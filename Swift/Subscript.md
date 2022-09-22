@@ -1,8 +1,8 @@
 # Subscript
 
-클래스, 구조체, 열거형에서 script(사전적의미: 대본)를 정의해서 사용할 수 있다.
-Subscript란 Collection, List, Sequence 등 집합의 특정 멤버 Element에 간단하게 접근할 수 있는 문법이다.
-즉, sequence의 멤버 요소에 접근하기 위한 바로가기 첨자로, 단일 타입에 여러 subscript를 정의할 수 있다.
+클래스, 구조체, 열거형에서 script(사전적의미: 대본)를 정의해서 사용할 수 있다.   
+Subscript란 Collection, List, Sequence 등 집합의 특정 멤버 Element에 간단하게 접근할 수 있는 문법이다.   
+즉, sequence의 멤버 요소에 접근하기 위한 바로가기 첨자로, 단일 타입에 여러 subscript를 정의할 수 있다.   
 
 대표적으로, 배열과 딕셔너리를 사용하면서 각 멤버 요소의 값에 접근할 때
 ```Swift
@@ -28,11 +28,11 @@ dictionary["two"]       // 2
 // Dictionary의 [ ]의 정의
 @inlinable public subscript(key: Key) -> Value?
 ```
-위 정의된 내용으로 `Array subscript는 parameter로 Int형을 index로 받고, 해당 index에 해당하는 Element를 반환하는 형태`라고 알 수 있게 된다.
-똑같이 `Dictionary subscript는 parameter로 Key를 받고, 해당 key에 해당하는 Value를 반환하는 형태`라고 볼 수 있다.
+위 정의된 내용으로 `Array subscript는 parameter로 Int형을 index로 받고, 해당 index에 해당하는 Element를 반환하는 형태`라고 알 수 있게 된다.   
+똑같이 `Dictionary subscript는 parameter로 Key를 받고, 해당 key에 해당하는 Value를 반환하는 형태`라고 볼 수 있다.   
 
 ## Subscript Syntax
-Subscript 선언 문법은 인스턴스 메서드와 연산 프로퍼티를 선언하는 것과 비슷하다.
+Subscript 선언 문법은 인스턴스 메서드와 연산 프로퍼티를 선언하는 것과 비슷하다.   
 다른 점은, `Subscript는 읽기-쓰기(Read-Write) 혹은 읽기전용(Read Only)만 가능하다는 점이다.`
 ```Swift
 subscript(index: Int) -> Int {
@@ -45,8 +45,8 @@ subscript(index: Int) -> Int {
 }
 ```
 
-- subscript의 `set`에 대한 인자 값을 따로 지정하지 않는다면 기본 값으로 `newValue`를 사용한다.
-- Read Only로 선언하려면 `get`, `set`을 지우고 따로 지정하지 않으면 `get`으로 동작하게되서 Read Only로 선언된다.
+- subscript의 `set`에 대한 인자 값을 따로 지정하지 않는다면 기본 값으로 `newValue`를 사용한다.   
+- Read Only로 선언하려면 `get`, `set`을 지우고 따로 지정하지 않으면 `get`으로 동작하게되서 Read Only로 선언된다.   
 ```Swift
 subscript(index: Int) -> Int {
     // 적절한 반환 값   
