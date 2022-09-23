@@ -22,6 +22,7 @@
 - [CGPoint, CGSize, CGRect](iOS/CGPoint,CGSize,CGRect.md)
 - [UIScreen](iOS/UIScreen.md)
 - [UIStackView](iOS/UIStackView.md)
+- [UITapGestureRecognizer](iOS/UITapGestureRecognizer.md)
 
 ## Swift
 - [Subscript](Swift/Subscript.md)
