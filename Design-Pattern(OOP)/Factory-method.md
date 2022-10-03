@@ -105,7 +105,7 @@ Factory method는 아래와 같은 구조를 갖게된다.
 
 
 ### 참고사이트 🌐
-[객체지향 디자인패턴2 - 얄팍한 코딩사전](https://www.youtube.com/watch?v=q3_WXP9pPUQ&t=74s)
+[객체지향 디자인패턴2 - 얄팍한 코딩사전](https://www.youtube.com/watch?v=q3_WXP9pPUQ&t=74s)   
 [[Swift 디자인 패턴] Factory Method Pattern(팩토리 메서드) - 디자인 패턴 공부 4](https://icksw.tistory.com/237)   
 [[디자인 패턴] Factory pattern in Swift](https://velog.io/@ryan-son/%EB%94%94%EC%9E%90%EC%9D%B8-%ED%8C%A8%ED%84%B4-Factory-pattern-in-Swift)   
 [[iOS Design Pattern] Factory Method](https://inuplace.tistory.com/1170)
