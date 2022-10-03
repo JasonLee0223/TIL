@@ -33,5 +33,9 @@
 - [Higher-order function (고차함수)](Swift/Higher-order%20function.md)
 - [[Functional programming] Closure Syntax](Swift/Closure.md)
 
+## Design-Pattern
+- [Singleton](Design-Pattern(OOP)/Singleton.md)
+- 
+
 ## Project - Setting
 - [Device Setting](Project-Setting/Device%20Setting.md)
