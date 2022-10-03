@@ -35,7 +35,7 @@
 
 ## Design-Pattern
 - [Singleton](Design-Pattern(OOP)/Singleton.md)
-- 
+- [Factory-method](Design-Pattern(OOP)/Factory-method.md)
 
 ## Project - Setting
 - [Device Setting](Project-Setting/Device%20Setting.md)
