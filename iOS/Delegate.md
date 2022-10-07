@@ -19,3 +19,4 @@ Delegate는 iOS에서 MVC기준으로 설명하게되면 ViewController에서 Mo
 [swiftbysundell-Delegation in Swift](https://www.swiftbysundell.com/articles/delegation-in-swift/)
 [iOS Delegate 패턴에 대해서 알아보기](https://magi82.github.io/ios-delegate/)
 [[swift] Delegate Pattern ( + delegate로 데이터 전달 )](https://ggasoon2.tistory.com/6)
+[기어가더라도 제대로 - Delegate](https://damagucci-juice.tistory.com/37)
