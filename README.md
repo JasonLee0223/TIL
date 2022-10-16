@@ -40,3 +40,4 @@
 
 ## Project - Setting
 - [Device Setting](Project-Setting/Device%20Setting.md)
+- [Install CocoaPods(M1 Error)](Project-Setting/Install%20Cocoapods.md)
