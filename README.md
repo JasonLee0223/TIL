@@ -41,3 +41,4 @@
 ## Project - Setting
 - [Device Setting](Project-Setting/Device%20Setting.md)
 - [Install CocoaPods(M1 Error)](Project-Setting/Install%20Cocoapods.md)
+- [Install RxSwift with CocoaPods(M1 Error)](Project-Setting/Install%20RxSwift%20with%20cocoapods.md)
