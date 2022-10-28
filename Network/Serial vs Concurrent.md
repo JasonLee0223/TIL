@@ -26,6 +26,6 @@ Async와는 다른 개념으로, Async는 `단일 작업`에 대한 특성을 �
 **`Concurrent Queue`는 내 Queue에 들어온 작업들을 동시다발적으로 실행 시키겠다!**   
 ⭐️ `한 번에 여러 개의 Task`를 실행시킬 수 있다!   
 
- <img src="https://user-images.githubusercontent.com/92699723/198548519-d771713e-118a-42a8-a139-ee2f50243db3.png" width="1000" height="500">
+ <img src="https://user-images.githubusercontent.com/92699723/198548519-d771713e-118a-42a8-a139-ee2f50243db3.png" width="700" height="500">
 
 
