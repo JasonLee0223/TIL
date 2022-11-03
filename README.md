@@ -35,6 +35,7 @@
 - [[Functional programming] Closure Syntax](Swift/Closure.md)
 
 ## Network
+- [REST API](Network/REST%20API.md)   
 - [Process vs Thread](Network/Process%20vs%20Thread.md)
 - [Async vs sync](Network/Async%20vs%20sync.md)
 - [Serial vs Concurrent](Network/Serial%20vs%20Concurrent.md)
