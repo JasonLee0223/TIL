@@ -206,3 +206,5 @@ http:// restapi.example.com/sports/soccer/players/13
 ### 🌐 Reference Site
 [REST API 제대로 알고 사용하기](https://meetup.toast.com/posts/92)   
 [[Network] REST란? REST API란? RESTful이란?](https://gmlwjd9405.github.io/2018/09/21/rest-and-restful.html)   
+[iOS) HTTP / HTTPS / RESTful 이 도대체 뭘까](https://babbab2.tistory.com/70?category=831129)   
+[RESTful API란 무엇입니까? - AWS](https://aws.amazon.com/ko/what-is/restful-api/)   
