@@ -51,4 +51,4 @@
 - [Install RxSwift with CocoaPods(M1 Error)](Project-Setting/Install%20RxSwift%20with%20cocoapods.md)
 
 ## App 배포와 출시
-- [CI/CD란?](App%20배포와%20출시/CI/CD란?.md)   
+- [CI/CD란?](App%20배포와%20출시/CI,%20CD란?.md)   
