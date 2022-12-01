@@ -1,16 +1,4 @@
-# API Design Guidelines
-
-## 🪧 목차
-- Fundamentals (핵심개념)
-- Naming
-  - Promote Clear Usage (명확하게 사용하기)
-  - Strive for Fluent Usage (자연스러운 사용을 위해 노력하기)
-  - Use Terminology Well (적절한 기술 용어 사용하기)
-- Conventions
-  - General Conventions (일반 규칙)
-  - Parameters (매개변수)
-  - Argument Labels (전달인자 레이블)
-- Special Instructions (특별 지침들)
+# Fundamentals
 
 ## 📕 Fundamentals (핵심 개념)
 - >**Clarity at the point of use** is your most important goal.   
