@@ -33,8 +33,19 @@
 - [First-Class Citizen(1급 객체)](Swift/First-Class%20Citizen.md)
 - [Higher-order function (고차함수)](Swift/Higher-order%20function.md)
 - [[Functional programming] Closure Syntax](Swift/Closure.md)
-    ### Basic
-    - [API Design Guidelines](Swift/#%20Basic%20#/API%20Design%20Guidelines.md)
+
+### API Design Guidelines
+## 🪧 Table of Contents
+- [Fundamentals (핵심개념)](Swift/Fundamentals.md)
+- Naming
+  - Promote Clear Usage (명확하게 사용하기)
+  - Strive for Fluent Usage (자연스러운 사용을 위해 노력하기)
+  - Use Terminology Well (적절한 기술 용어 사용하기)
+- Conventions
+  - General Conventions (일반 규칙)
+  - Parameters (매개변수)
+  - Argument Labels (전달인자 레이블)
+- Special Instructions (특별 지침들)
 
 ## Network
 - [REST API](Network/REST%20API.md)   
