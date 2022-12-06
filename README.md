@@ -62,6 +62,7 @@
 - [Device Setting](Project-Setting/Device%20Setting.md)
 - [Install CocoaPods(M1 Error)](Project-Setting/Install%20Cocoapods.md)
 - [Install RxSwift with CocoaPods(M1 Error)](Project-Setting/Install%20RxSwift%20with%20cocoapods.md)
+- [UserInterfaceState.xcuserstate 제거하기](Project-Setting/UserInterfaceState%20xcuserstate.md)
 
 ## App 배포와 출시
 - [CI/CD란?](https://github.com/JasonLee0223/TIL/blob/main/App%20%EB%B0%B0%ED%8F%AC%EC%99%80%20%EC%B6%9C%EC%8B%9C/CI,%20CD%EB%9E%80?.md)   
