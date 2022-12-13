@@ -26,6 +26,7 @@
 - [UITapGestureRecognizer](iOS/UITapGestureRecognizer.md)
 
 ## Swift
+- [Error Handling](Swift/Error%20Handling.md)
 - [Subscript](Swift/Subscript.md)
 - [Protocol Syntax](Swift/Protocol.md)
 - [Handling Decimal Point](Swift/Handling%20Decimal%20Point.md)
