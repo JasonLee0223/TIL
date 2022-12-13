@@ -26,6 +26,7 @@
 - [UITapGestureRecognizer](iOS/UITapGestureRecognizer.md)
 
 ## Swift
+- [readLine().md](Swift/readLine().md)
 - [Error Handling](Swift/Error%20Handling.md)
 - [Subscript](Swift/Subscript.md)
 - [Protocol Syntax](Swift/Protocol.md)
