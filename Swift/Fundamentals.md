@@ -1,6 +1,4 @@
-# Fundamentals
-
-## 📕 Fundamentals (핵심 개념)
+# Fundamentals (핵심 개념)
 - >**Clarity at the point of use** is your most important goal.   
     Entities such as methods and properties are declared only once but used repeatedly.   
     Design APIs to make those uses clear and concise.   
@@ -167,9 +165,3 @@
         |Requires|Returns|SeeAlso|Since|
         |Throws|ToDo|Version|Warning|
 ---
-
-## 📗 Naming
-
-## 📘 Conventions
-
-## 📙 Special Instructions
