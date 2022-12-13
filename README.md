@@ -36,18 +36,18 @@
 - [Higher-order function (고차함수)](Swift/Higher-order%20function.md)
 - [[Functional programming] Closure Syntax](Swift/Closure.md)
 
-### API Design Guidelines
-## 🪧 Table of Contents
-- [Fundamentals (핵심개념)](Swift/Fundamentals.md)
-- Naming
+## API Design Guidelines
+### 🪧 Table of Contents
+- [📕 Fundamentals (핵심개념)](Swift/Fundamentals.md)
+- 📗 Naming
   - [Promote Clear Usage (명확하게 사용하기)](Swift/Promote%20Clear%20Usage.md)
   - [Strive for Fluent Usage (자연스러운 사용을 위해 노력하기)](Swift/Strive%20for%20Fluent%20Usage.md)
   - [Use Terminology Well (적절한 기술 용어 사용하기)](Swift/Use%20Terminology%20Well.md)
-- Conventions
+- 📘 Conventions
   - General Conventions (일반 규칙)
   - Parameters (매개변수)
   - Argument Labels (전달인자 레이블)
-- Special Instructions (특별 지침들)
+- 📙 Special Instructions (특별 지침들)
 
 ## Network
 - [REST API](Network/REST%20API.md)   
