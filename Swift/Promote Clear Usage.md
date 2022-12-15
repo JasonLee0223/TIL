@@ -1,4 +1,5 @@
 # Promote Clear Usage (명확하게 사용하기)
+
 - >**Include all the words needed to avoid ambiguity** for a person reading code where the name is used.   
 
     이름이 사용된 코드를 읽는 사람들을 위해 **모호함으로 혼동을 주지 않도록 필요한 모든 단어를 포함합니다.**
