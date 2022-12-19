@@ -1,6 +1,9 @@
 # TIL
 매일매일 학습하여 커밋을 남겨보자!
 
+## Git
+- [Commit message style](Git/Commit%20message%20style.md)
+
 ## CS10
 - [Introduce](CS10/Introduce%20CS10.md)
 - [Half-Adder](CS10/Half-Adder.md)
