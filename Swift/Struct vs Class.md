@@ -88,6 +88,7 @@ Value Type을 다른 변수에 할당하면 복사를 하게 된다.
 - JSON의 필드와 1:1 mapping되는 간단한 모델이 필요하다면 사용
 
 ### 🌐 Reference Site
+- [Choosing Between Structures and Classes](https://developer.apple.com/documentation/swift/choosing-between-structures-and-classes)   
 - [Swift struct vs. class 차이점 비교 분석](https://www.letmecompile.com/swift-struct-vs-class-%EC%B0%A8%EC%9D%B4%EC%A0%90-%EB%B9%84%EA%B5%90-%EB%B6%84%EC%84%9D/)
 - [[Swift] Class와 Struct의 차이점?](https://icksw.tistory.com/256)   
 - [[스위프트(Swift) 프로그래밍] - 왜 Swift의 클래스(Class)에는 멤버와이즈 초기화(Memberwise Init)가 없을까?](https://jayb-log.tistory.com/258)   
