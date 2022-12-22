@@ -30,7 +30,7 @@
 
 ## Swift
 - [readLine()](Swift/readLine().md)
-- [Struct vs Class](swift/Struct%20vs%20Class.md)   
+- [Struct vs Class](Swift/Struct%20vs%20Class.md)   
 - [Error Handling](Swift/Error%20Handling.md)
 - [Subscript](Swift/Subscript.md)
 - [Protocol Syntax](Swift/Protocol.md)
