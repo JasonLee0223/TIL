@@ -123,6 +123,9 @@ iOS 디바이스의 동기화 및 백업 프로세스가 오래 걸리지 않도
   - 캐시 데이터의 예로는 DB 캐시 파일과 일시적으로 다운로드 할 수 있는 Contents가 있습니다.
   - 시스템에서 Caches/디렉터리를 삭제하여 디스크 공간을 비울 수 있으므로, 앱이 필요에 따라 이러한 파일을 다시 만들거나, 다운로드 할 수 있어야 한다.
 
+< @Blue의 FileSystem 정리>
+<img src= "https://user-images.githubusercontent.com/92699723/209509098-fe49d5e4-e732-4cb4-9445-2d9c4515b016.png">
+
 ## 🌐 Reference Site
 [[Apple] File System Basics](https://developer.apple.com/library/archive/documentation/FileManagement/Conceptual/FileSystemProgrammingGuide/FileSystemOverview/FileSystemOverview.html#//apple_ref/doc/uid/TP40010672-CH2-SW12)   
 [[iOS] File System 구조](https://velog.io/@leeyoungwoozz/iOS-File-System-%EA%B5%AC%EC%A1%B0)   
