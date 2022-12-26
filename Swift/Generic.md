@@ -122,3 +122,48 @@ anyStack.pop()              // [1.0, "2"]
 그래서 Stack<Double>이라고 타입을 선언해준 doubleStack 인스턴스는 Element의 타입으로 Double을 사용한다.   
 동일하게 Element의 타입을 정해주면 그 타입에만 동작하도록 제한할 수 있어 더욱 안전하고 의도한 대로 기능을 사용하도록 유도할 수 있다.
 
+## 3️⃣ 타입 제약
+제네릭 함수가 처리해야 할 기능이 특정 타입에 한정되어야만 처리할 수 있다던가,   
+제네릭 타입을 특정 프로토콜을 따르는 타입만 사용할 수 있도록 제약을 두어야하는 상황이 발생할 수 있다.    
+타입 제약은 **`타입 매개변수가 가져야 할 제약사항을 지정할 수 있는 방법`** 이다.   
+**`타입 제약(Type Constraints)은 클래스 타입 또는 프로토콜로`** 만 줄 수 있다.   
+
+예를 들어 제네릭 타입인 Dictionary의 키는 Hashable 프로토콜을 준수하는 타입만 사용할 수 있다.   
+```Swift
+// Dictionary 타입 정의
+public struct Dictionary<Key : Hashable, Value>: Collection,
+    ExpressibleByDictionaryLiteral { \* ... */ }
+```
+즉, Key로 사용할 수 있는 타입은 Hashable 프로토콜을 준수하는 타입이어야 한다는 것이다.   
+
+여러 가지의 제약을 추가하고 싶다면 콤마로 구분해주는 것이 아니라 `where절`을 사용할 수 있다.   
+```Swift
+// 제네릭 타입 제약 추가
+func swapTwoValues<T: BinaryInteger>(_ a: inout T, _ b: inout T) where T: FloatingPoint {
+    // 함수 구현
+}
+```
+위 코드를 보면 `where절을 사용`하여 FloatingPoint 프로토콜도 준수하는 타입만 사용할 수 있다.   
+
+```Swift
+// substractTwoValue 함수의 잘못된 구현
+func substractTwoValue<T>(_ a: T, _ b: T) -> T {
+    return a - b
+}
+
+// substractTwoValue 함수의 구현
+func substractTwoValue<T: BinaryInteger>(_ a: T, _ b: T) -> T {
+    return a - b
+}
+```
+BinaryInteger 프로토콜을 준수하는 타입으로 한정해두니 뺄셈 연산이 가능하게 되었다.   
+타입 제약은 함수 내부에서 실행해야 할 연산에 따라 적절한 타입을 전달받을 수 있도록 제약을 둘 수 있다.   
+
+> 스위프트의 표준 라이브러리에 정의되어 있는 프로토콜 중 타입 제약에 자주 사용할 만한 프로토콜에는   
+> Hashable, Equatable, Comparable, Indexable, IteratorProtocol, Error, Colleciton, CustomStringConvertible 등이 있다.
+
+## 4️⃣ 프로토콜의 연관 타입
+프로토콜을 정의할 때 `연관 타입(Associated Type)`을 함께 정의하면 유용할 때가 있다.   
+제네릭에서는 어떤 타입이 들어올 지 모를 때, 타입 매개변수를 통해 '종류는 알 수 없지만, 어떤 타입이 여기에 쓰일 것이다'라고 표현해주었다면   
+**`연관 타입은 타입 매개변수의 그 역할을 프로토콜에서 수행할 수 있도록 만들어진 기능`** 이다.
+
