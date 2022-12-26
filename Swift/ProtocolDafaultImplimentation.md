@@ -91,3 +91,10 @@ Message.isSendableInstance("Hello")         // false
 // Message와 Mail은 Sendable 프로토콜을 준수합니다.
 Message.isSendableInstance(myPhoneMessage)  // true
 ```
+위 예제를 통해 Message와 Mail 클래스는 Receiveable과 Sendable 프로토콜을 채택하고 있지만,   
+**`실제로 구현한 것은 저장 인스턴스 프로퍼티인 to뿐`** 이라는 것을 확인할 수 있습니다.   
+
+프로토콜을 정의할 때는 그 프로토콜을 채택한 타입에서 구현해주어야 하는 프로토콜의 요구사항을 구현할 수 없습니다.   
+단지 요구사항을 정의만 할 수 있을 뿐입니다.   
+그러나 **`프로토콜의 익스텐션에는 프로토콜이 요구하는 기능을 실제로 구현해줄 수 있습니다.`**   
+다만 익스텐션에는 **`저장 프로퍼티를 구현할 수 없으므로 저장 프로퍼티는 각각의 타입에서 직접 구현해야합니다.`**
