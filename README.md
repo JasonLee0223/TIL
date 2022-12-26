@@ -31,7 +31,6 @@
 
 ## Swift
 - [readLine()](Swift/readLine().md)
-- [Error Handling](Swift/Error%20Handling.md)   
 - [Handling Decimal Point](Swift/Handling%20Decimal%20Point.md)
 - [@escaping Closure](Swift/@escaping%20closure.md) -> 미완료
 
@@ -50,6 +49,10 @@
 - [Protocol Syntax](Swift/Protocol.md)   
 - [Generic](Swift/Generic.md)
 - [Protocol Default Implimentations(프로토콜 초기구현)](Swift/ProtocolDafaultImplimentation.md)   
+
+## Swift High Class (고급)
+- [Pattern](Swift/Pattern.md)
+- [Error Handling](Swift/Error%20Handling.md)   
 
 ## API Design Guidelines
 ### 🪧 Table of Contents
