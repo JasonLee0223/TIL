@@ -117,8 +117,7 @@ anyStack.push(3)            // [1.0, "2", 3]
 anyStack.pop()              // [1.0, "2"]
 ```
 위 예제에서는 Element라는 `타입 매개변수`를 사용했다.   
-> ⭐️ Stack의 인스턴스를 생성할 때 실제로 Element 대신 어떤 타입을 사용할지 명시해주는 방법은   
-`Stack<Type>`처럼 선언해주면 된다.   
+> ⭐️ Stack의 인스턴스를 생성할 때 실제로 Element 대신 어떤 타입을 사용할지 명시해주는 방법은 `Stack<Type>`처럼 선언해주면 된다.   
 그래서 Stack<Double>이라고 타입을 선언해준 doubleStack 인스턴스는 Element의 타입으로 Double을 사용한다.   
 동일하게 Element의 타입을 정해주면 그 타입에만 동작하도록 제한할 수 있어 더욱 안전하고 의도한 대로 기능을 사용하도록 유도할 수 있다.
 
