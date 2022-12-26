@@ -32,10 +32,56 @@ iOS 파일 시스템은 `독자적으로 실행되는 앱을 대상`으로 합�
 **`(= 외부에서 앱 내의 디렉토리에 접근하거나 파일을 만ㄷ르 수 없다.)`**   
 이 규칙의 한가지 예외는 앱이 Public 시스템 인터페이스를 사용하여 사용자의 연락처나 음악과 같은 항목에 접근하는 경우입니다.
 
-위 Sandbox 디렉토리 안의 있는 하위 디렉토리를 확인해보겠습니다.
+위 Sandbox 디렉토리 안의 있는 하위 디렉토리를 확인해보겠습니다.   
 <img src = "https://user-images.githubusercontent.com/92699723/209493261-54b485db-c72d-4076-ae4c-d1560d1163d4.png" width="400" height="400">   
 
+#### 🟢 Bundle Directory
+- 파일 시스템 내 하나의 디렉터리
+  - 실행 가능한 파일
+  - info.plist
+  - 각 종 Resources(이미지, 사운드, strings 등) 등을 그룹화
 
+#### 🔴 Data Container -> Home Directory
+- Data Container Home Directory = NSHomeDirectory()
+- 기본 디렉토리
+  - Documents
+  - Library
+  - tmp
+
+#### 🔴 Data Container -> Document Folder
+- 유저가 앱을 통해 생성한 문서나 데이터, 또는 외부 앱을 통해서 전송한 음악, pdf 등의
+컨텐츠를 저장하는 곳
+- 설정에 따라 유저가 직접 파일 추가 및 삭제 가능
+  - ex) info.plist 에서 UIFileSharingEnabled = YES로 설정
+- 따라서 유저에 의해 삭제되거나 내용이 변경되어도 무방하고 유저가 다루는 컨텐츠와 관련이 있는 파일들만 저장
+
+#### 🔴 Data Container -> Document Folder -> Inbox
+- 타 앱을 통해 전송받은 파일이 저장되는 디렉토리
+  - ex) 메일 앱 첨부파일 등
+- 파일을 읽거나 삭제할 수 있지만, 새 파일을 추가하거나 기존 파일 수정 불가
+- 타 앱에서 받은 파일들은 덮어쓰기 대신 `[file-1, file-2]`처럼 번호가 자동으로 부여되면서 새 파일이 생성된다.
+
+#### 🟣 Data Container -> Library Folder
+- 유저 데이터 파일 및 임시 파일을 제외한 모든 파일들을 관리
+- 유저에게 노출되는 것을 피하고 앱의 기능이나 관리에 필요한 파일 저장
+- 주로 SubDirectory인 `Application Support`와 `Caches`를 이용하지만 커스텀 디렉터리 사용이 가능
+- Preference, Cookies, Saved Application State, WebKit 등 필요할 때 시스템에서 자동 생성
+
+#### 🟣 Data Container -> Library Folder -> Application Support
+- 앱의 기능 또는 관리를 위해 지속적으로 관리해야되는 파일 저장
+- Documents와 거의 동일한 속성을 가지지만, 유저에 대한 노출 여부에 따라 위치가 결정됩니다.
+- 주로 BundleID 또는 회사명 등의 SubDirectory로 만들어 관리
+- CoreData 기본 저장 경로
+- Realm은 Documents 경로를 사용하는데 Documents는 노출이 되기 때문에 중요한 정보들이 저장되어있으면   
+Application Support 폴더로 변경해서 사용하는 것이 좋다.
+
+#### 🟣 Data Container -> Library Folder -> Caches
+- 앱의 동작 속도/데이터 절약 등을 위해 사용되는 공간
+  - ex) Background에서 Foreground로 넘어올 때 스냅샷 이미지로 사용됨.
+
+#### 🔵 Data Container -> Temporary Directory
+- 현재 앱 실행중에는 사용하지만 유지할 필요 없는 임시 파일 저장
+- 사용 후 필요없어진 파일은 직접 삭제해주는 것을 권장
 
 ### 📲 Where You Should Put Your App's Files
 iOS 디바이스의 동기화 및 백업 프로세스가 오래 걸리지 않도록 하려면, 파일을 저장할 위치를 선택하세요.   
