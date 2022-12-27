@@ -10,6 +10,7 @@
 
 ## iOS
 - [File System Basics](iOS/FileSystem.md)
+- [Sandbox 정책과 Files 앱](iOS/SandBox.md)
 - [UIKit 설명, App and Environment](iOS/About%20App%20Development%20with%20UIKit.md)
 - [VC간의 데이터 전송방법](iOS/Data%20Transfer%20Process.md)
 - [Delegate](iOS/Delegate.md)
