@@ -123,6 +123,18 @@ iOS 디바이스의 동기화 및 백업 프로세스가 오래 걸리지 않도
   - 캐시 데이터의 예로는 DB 캐시 파일과 일시적으로 다운로드 할 수 있는 Contents가 있습니다.
   - 시스템에서 Caches/디렉터리를 삭제하여 디스크 공간을 비울 수 있으므로, 앱이 필요에 따라 이러한 파일을 다시 만들거나, 다운로드 할 수 있어야 한다.
 
+### 💭 Reference
+- [APFS(Apple File System)](https://ko.wikipedia.org/wiki/%EC%95%A0%ED%94%8C_%ED%8C%8C%EC%9D%BC_%EC%8B%9C%EC%8A%A4%ED%85%9C): 애플에서 macOS, iOS, watchOS, tvOS 등에서 범용으로 사용하고자 만드는 파일시스템,   
+  기존의 HFS+를 대체하는 새로운 파일시스템이다.   
+  기능: 컨테이너 방법을 사용하여 컨테이너 내의 파티션 용량을 조절할 수 있으며,   
+  `Copy on Right`를 지원함으로싸 스냅샷을 더 편하게 지원할 수 잇게 되었다.   
+  또한 강력한 암호화 기능이 추가되어 APFS 상에서 추출할 수 없는 비밀 키를 만들고 이를 이용해   
+  파일 시스템을 암호화하여 삭제하는 등의 강력한 기능들이 추가되었다.
+- [HFS(Hierarchical File System)](https://ko.wikipedia.org/wiki/%EA%B3%84%EC%B8%B5%EC%A0%81_%ED%8C%8C%EC%9D%BC_%EC%8B%9C%EC%8A%A4%ED%85%9C): 계층적 파일 시스템으로 애플이 맥OS를 구동하는 컴퓨터 시스템에 사용할 목적으로 개발한 파일 시스템.   
+  HFS는 맥OS 표준으로 일컫기도 하며 그 뒤를 잇는 파일 시스템으로 맥 OS 확장으로 불리는
+  HFS+가있다.
+
+
 < @Blue의 FileSystem 정리>
 <img src= "https://user-images.githubusercontent.com/92699723/209509098-fe49d5e4-e732-4cb4-9445-2d9c4515b016.png">
 
