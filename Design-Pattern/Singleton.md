@@ -184,5 +184,6 @@ userInfo.name = "User_name"
 
 ### 참고사이트 🌐
 [[Apple Developer] Singleton](https://developer.apple.com/library/archive/documentation/General/Conceptual/DevPedia-CocoaCore/Singleton.html)   
+[Managing a Shared Resource Using a Singleton](https://developer.apple.com/documentation/swift/managing-a-shared-resource-using-a-singleton)   
 [객체지향 디자인패턴1 - 얄팍한 코딩사전](https://www.youtube.com/watch?v=lJES5TQTTWE)   
 [Swift) 싱글톤 패턴(Singleton Pattern) - 개발자 소들이](https://babbab2.tistory.com/66)
