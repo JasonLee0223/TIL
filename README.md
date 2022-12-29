@@ -57,6 +57,7 @@
 ## Commonly used protocols in Swift
 - [Equatable](iOS/Equatable.md)
 - [Comparable](iOS/Comparable.md)
+- [Hashable](Swift/Hashable.md)    
 
 ---
 ## API Design Guidelines
