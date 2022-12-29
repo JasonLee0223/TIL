@@ -8,7 +8,7 @@
 - [Introduce](CS10/Introduce%20CS10.md)
 - [Half-Adder](CS10/Half-Adder.md)
 
-## iOS
+# iOS
 - [File System Basics](iOS/FileSystem.md)
   - [Sandbox 정책과 Files 앱](iOS/SandBox.md)
 - [UIKit 설명, App and Environment](iOS/About%20App%20Development%20with%20UIKit.md)
@@ -22,15 +22,13 @@
 - [UISlider](iOS/UISlider.md)
 - [UIImageView](https://github.com/JasonLee0223/TIL/blob/main/iOS/UIImageVIew.md)
 - [ViewController Life-Cycle](iOS/ViewController%20Life-Cycle.md)
-- [Equatable](iOS/Equatable.md)
-- [Comparable](iOS/Comparable.md)
 - [Frame vs Bounds](iOS/Frame%20vs%20Bounds.md)
 - [CGPoint, CGSize, CGRect](iOS/CGPoint,CGSize,CGRect.md)
 - [UIScreen](iOS/UIScreen.md)
 - [UIStackView](iOS/UIStackView.md)
 - [UITapGestureRecognizer](iOS/UITapGestureRecognizer.md)
 
-## Swift
+# Swift
 - [readLine()](Swift/readLine().md)
 - [Handling Decimal Point](Swift/Handling%20Decimal%20Point.md)
 - [@escaping Closure](Swift/@escaping%20closure.md) -> 미완료
@@ -56,6 +54,11 @@
 - [Pattern](Swift/Pattern.md)
 - [Error Handling](Swift/Error%20Handling.md)   
 
+## Commonly used protocols in Swift
+- [Equatable](iOS/Equatable.md)
+- [Comparable](iOS/Comparable.md)
+
+---
 ## API Design Guidelines
 ### 🪧 Table of Contents
 - [📕 Fundamentals (핵심개념)](Swift/Fundamentals.md)
