@@ -14,6 +14,62 @@
 컴파일 할 때부터 이 요소가 차지할 메모리 용량을 이미 알 수 있도록 딱 정해져 있기 때문에 이런 동적 요소들과 대비되는 개념으로   
 `static`, 정적이라고 불리는 것.   
 
+## Singleton Official Document
+> A single class return the same instance no matter how many times an application requests it.   
+
+Singleton 클래스는 어플리케이션이 `요청한 횟수에 관계없이 동일한 인스턴스를 반환`합니다.
+
+> A typical class permits callers to create as many instances of the class as they want, whereas with a singleton class, there can be only one instance of the class per process.
+
+일반적으로 사용하는 클래스는 호출자가 원하는 만큼 클래스의 인스턴스를 만들 수 있도록 허용하는 반면,   
+Singleton 클래스에서는 `프로세스당 하나의 클래스 인스턴스만` 있을 수 있습니다.
+
+> A singleton object provides a global point of access to the resources of its class.
+
+Singleton 객체는 해당 클래스의 자원에 대한 전역으로 접근할 수 있는 지점을 제공합니다.
+
+> Singletons are used in situations where this single point of control is desirable, such as with classes that offer some general service of resource.
+
+<img src = "https://user-images.githubusercontent.com/92699723/209903731-ef60d384-962a-40c9-9080-778a583f8b50.png">
+
+Singleton은 일발적인 서비스나 자원을 제공하는 클래스와 같이 이 단일 제어 지점이 올바른 상황에서 사용됩니다.
+
+> You obtain the global instance from a singleton class through a factory method.
+
+Factory 메서드를 통해 Singleton 클래스에서 전역 인스턴스를 얻을 수 있습니다.
+
+> The class lazily creates its sole instance the first time it is requested and thereafter ensures that no other instance can be created.
+
+이 클래스는 처음 요청될 때 유일한 인스턴스를 느리게 만들고 그 이후에는 다른 인스턴스를 만들 수 없도록 합니다.
+
+> A singleton class also prevents callers from copying, retaining, or releasing the instance.
+
+Singleton 클래스는 또한 호출자가 인스턴스를 복사, 유지 또는 해제하는 것을 방지합니다.
+
+> You may create your own singleton classes if you find the need for them.
+
+개발자가 필요한 경우에는 자신만의 싱글톤 클래스를 만들 수 있습니다.
+
+> For example, if you have a class that provides sounds to other objects in an application, you might make it a singleton.
+
+예를 들어 애플리케이션의 다른 개체에 소리를 제공하는 클래스가 있는 경우 이를 싱글톤으로 만들 수 있습니다.
+
+> Several Cocoa framework classes are singletons.
+
+몇몇개의 코코아 프레임워크 클래스는 싱글톤입니다.
+
+> They include `NSFileManager`, `NSWorkSpace`, and, in UIKit, `UIApplication` and `UIAccelerometer`.
+
+NSFileManager, NSWorkspace 및 UIKit에는 UIApplication 및 UIAccelerometer가 포함됩니다.
+
+> The name of the factory method returning the singleton instance has, by convention, the form `shared` Class Type.
+
+싱글톤 인스턴스를 반환하는 팩토리 메서드의 이름은 관례에 따라 sharedClassType 형식을 갖습니다.
+
+> Examples from the Cocoa frameworks are `shareFileManager`, `sharedColorPanel`, and `sharedWorkspace`
+
+Cocoa 프레임워크의 예시로는 sharedFileManager, sharedColorPanel, sharedWorkspace가 있습니다.
+
 ## 1. Singleton Pattern이란?
 **특정 용도로 객체를 하나만 생성하여, 공용으로 사용하고 싶을 때 사용하는 디자인 유형**
 
@@ -127,5 +183,6 @@ userInfo.name = "User_name"
 - 따라서 수정과 테스트가 어려워짐 
 
 ### 참고사이트 🌐
+[[Apple Developer] Singleton](https://developer.apple.com/library/archive/documentation/General/Conceptual/DevPedia-CocoaCore/Singleton.html)   
 [객체지향 디자인패턴1 - 얄팍한 코딩사전](https://www.youtube.com/watch?v=lJES5TQTTWE)   
 [Swift) 싱글톤 패턴(Singleton Pattern) - 개발자 소들이](https://babbab2.tistory.com/66)
