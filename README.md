@@ -77,8 +77,8 @@
 - [GCD(Grand Central Dispatch)](Network/GCD(Grand%20Central%20Dispatch).md)
 
 ## Design-Pattern
-- [Singleton](Design-Pattern(OOP)/Singleton.md)
-- [Factory-method](Design-Pattern(OOP)/Factory-method.md)
+- [Singleton](Design-Pattern/Singleton.md)
+- [Factory-method](Design-Pattern/Factory-method.md)
 
 ## Project - Setting
 - [Device Setting](Project-Setting/Device%20Setting.md)
