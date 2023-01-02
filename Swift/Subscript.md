@@ -127,4 +127,5 @@ Stack[1]    // 1
 
 ### 참고사이트 🌐
 [서브스크립트 (Subscripts) - The Swift Language Guide (한국어)](https://jusung.gitbook.io/the-swift-language-guide/language-guide/12-subscripts)   
-[Swift) 서브스크립트(Subscript) 정복하기](https://babbab2.tistory.com/123)
+[Swift) 서브스크립트(Subscript) 정복하기](https://babbab2.tistory.com/123)   
+[[Apple Developer] subscript(_:)](https://developer.apple.com/documentation/swift/dictionary/subscript(_:)-8rfql)
