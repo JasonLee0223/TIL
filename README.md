@@ -29,6 +29,7 @@
 - [UITapGestureRecognizer](iOS/UITapGestureRecognizer.md)
 
 # Swift
+- [Enum](Swift/Enum.md)   
 - [readLine()](Swift/readLine().md)
 - [Handling Decimal Point](Swift/Handling%20Decimal%20Point.md)
 - [@escaping Closure](Swift/@escaping%20closure.md) -> 미완료
