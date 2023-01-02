@@ -58,6 +58,7 @@
 - [Equatable](iOS/Equatable.md)
 - [Comparable](iOS/Comparable.md)
 - [Hashable](Swift/Hashable.md)    
+- [CaseIterable](Swift/CaseIterable.md)
 
 ---
 ## API Design Guidelines
