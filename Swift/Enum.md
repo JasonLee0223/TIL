@@ -4,3 +4,5 @@
 enum은 한 번 저장해 (메모리에 올려)놓고 **`값을 변경해서 쓰지 않는 상수 개념`** 으로   
 `static 변수처럼 쓰여` 인스턴스 프로퍼티로 사용하면 컴파일 에러가 난다!   
 
+### 🌐 Reference Site
+[Enum(열거형) - switch-case와 쓰기, 메서드와 연동, 연동되는 값](https://jinios.github.io/swift/2017/11/22/enum/)   
