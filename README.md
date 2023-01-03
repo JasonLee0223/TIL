@@ -35,7 +35,13 @@
 - [@escaping Closure](Swift/@escaping%20closure.md) -> 미완료
 
 ## OOP(Object Oriented Programming)
+### 🪧 Table of Contents
 - [SOLID](OOP/SOLID.md)
+  - [SRP(Single-Responsibility Principle)](OOP/SRP.md)   
+  - [OCP(Open-Close-Principle)](OOP/OCP.md)
+  - [LSP(Liskov Substitution Principle)](OOP/LSP.md)   
+  - [DIP(Dependency Inversion Principle)](OOP/DIP.md)   
+  - [ISP(Interface Segregation Principle)](OOP/ISP.md)   
 - [Struct vs Class](Swift/Struct%20vs%20Class.md)   
 
 ## POP (Protocol-Oriented Language)
