@@ -28,3 +28,33 @@ UnitTest만 구성되어도 굉장히 많은 문제를 해결할 수 있으며, 
 - Timely(적시에) - UnitTest는 프로덕션 코드가 테스트를 성공하기 직전에 구성되어야 한다.   
   TDD 방법론에 적합한 원칙이지만 실제로 적용되지 않는 경우도 있다.
 
+## Practice
+```Swift
+// 함수명은 이 기능이 명확하게 어떤 일을 하는지 알 수 있도록 짓는다.
+// 하여 메서드명을 한글로 작성하여 보다 명확하게 빨리 파악할 수 있도록한다.
+func test_1더하기1은2다() {
+	let calculator = Calculator()
+	let result = calculator.add(1, 1)
+	XCTAssetEqual(result, 2)
+	XCTAssetEqual(result, 3).           // 에러 발생
+}
+
+// 주로 엣지값을 테스트를 많이한다.
+// 엣지값 = 범위의 경계값을 보통 말한다.
+func test_2더하기1은3이다() {
+	let calculator = Calculator()
+	let result = calculator.add(2, 1)
+	XCTAssetEqual(result, 3)
+}
+```
+
+```Swift
+// system under test
+let sut = Calculator()
+
+func test_1더하기1은2다() {
+	let result = sut.add(1, 1)
+	XCTAssetEqual(result, 2)
+	XCTAssetEqual(result, 3).           // 에러 발생
+}
+```
