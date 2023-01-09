@@ -26,3 +26,65 @@ test로 시작하는 메서드들은 작성해야 할 test case가 되는 메서
 - testPerformanceExample()   
 성능을 테스트해보기 위한 메서드다. → 성능 테스트가 필요한 것이 아니라면 삭제해도 된다.   
 XCTestCase의 measure(block:)라는 메서드를 통해 성능을 측정   
+
+## Practice
+```Swift
+// 여기서는 Fast 원칙에 맞춰 옵셔널 처리로 하게되면 계속 바인딩을 해줘야해서 예외적으로 강제 언래핑을 사용한다.
+var sut: LottoMachine!
+
+// 1, 4
+override func setUpWithError() throws {
+	try super.setUpWithError()
+
+}
+
+// 3, 6
+override func tearDownWithError() throws {
+	try super.tearDownWithError()
+	sut = nil
+}
+
+// 2
+func testExample() throws {
+
+}
+
+// 5
+func testExmaple2() throws {
+
+}
+
+// 한글로 테스트 메서드명을 작성하는게 Fast 원칙에 맞아서 한글로 작성한다.
+func test_6개보다_적은_숫자를_입력했을때_False이다() {
+	let input = [1,2,3]
+
+	let result = sut.isValidLottoNumbers(of: input)
+	XCTAssertEqual(result, false) // XCT -> XcodeTest 줄인말
+}
+
+// 테스트 코드는 메서드명 제일 앞에 test 키워드를 꼭 적어줘야한다!
+func test_배열안의_숫자가_1에서_45사이의_숫자이다() {
+	// given
+	let input = [1,2,3,4,5]
+
+	// when
+	let result = sut.isValidLottoNumbers(of: input)
+	
+	// then
+	XCTAssertEqual(result, false)
+}
+
+// 내가 만든 테스트 코드
+func test_배열안의_랜덤숫자가_1에서_45사이의_숫자가아니면_false를_반환한다() {
+	// given
+	// 기존에 메서드로 Random을 지원해줘서 필요없을 것 같다!
+	let input = sut.makeRandomLottoNumbersArray()
+	
+	// when
+	let expectation = [1,2,3,4,46]
+	let result = Set(input)
+	
+	// then
+	XCTAssertEqual(result, false)    // ??
+}
+```
