@@ -22,3 +22,6 @@ func testArraySorting() {
 	XCTAssertEqual(result, expectation)
 }
 ```
+
+### 🌐 Reference Site
+[GivenWhenThen](https://martinfowler.com/bliki/GivenWhenThen.html)
