@@ -87,7 +87,7 @@
   - Argument Labels (전달인자 레이블)
 - 📙 Special Instructions (특별 지침들)
 
-- [Bool 변수 이름 제대로 짓기 위한 최소한의 영문법](Naming/BoolNaming.md)
+- [✏️ Bool 변수 이름 제대로 짓기 위한 최소한의 영문법](Naming/BoolNaming.md)
 ---
 ## Network
 - [REST API](Network/REST%20API.md)   
