@@ -32,6 +32,7 @@
 - [3 ways to change the screen](ios/StoryBoard/3%20ways%20to%20change%20the%20screen.md)
 
 # Swift
+- [Dictionary](Swift/Dictionary.md)
 - [Enum](Swift/Enum.md)   
 - [readLine()](Swift/readLine().md)
 - [Handling Decimal Point](Swift/Handling%20Decimal%20Point.md)

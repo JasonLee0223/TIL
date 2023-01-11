@@ -6,3 +6,6 @@ enum은 한 번 저장해 (메모리에 올려)놓고 **`값을 변경해서 쓰
 
 ### 🌐 Reference Site
 [Enum(열거형) - switch-case와 쓰기, 메서드와 연동, 연동되는 값](https://jinios.github.io/swift/2017/11/22/enum/)   
+[Swift) 열거형(Enumeration) 기초편](https://babbab2.tistory.com/116)   
+[Swift) 열거형(Enumeration) 심화편](https://babbab2.tistory.com/117)   
+[[swift] enum과 switch문](https://sweetdev.tistory.com/317)   
