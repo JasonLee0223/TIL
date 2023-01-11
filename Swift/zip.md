@@ -49,3 +49,7 @@ func currentStockDisplay(on emojiLabels: [UILabel], change countLabels: [UILabel
     }
 }
 ```
+
+### 🌐 Reference Site
+[zip(_:_:) | Apple Developer Documentation](https://developer.apple.com/documentation/swift/zip(_:_:))   
+[스위프트 zip 사용하기](https://hyerios.tistory.com/11)
