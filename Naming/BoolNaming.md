@@ -153,3 +153,6 @@ let region3 = region1.overlapping(region2)
   - has + 과거분사 (is + 과거분사와 의미 거의 동일)
 - 동사원형 용법
   - `3인칭 단수`
+
+### 🌐 Reference Site
+[Bool 변수 이름 제대로 짓기 위한 최소한의 영어 문법](https://soojin.ro/blog/naming-boolean-variables)   
