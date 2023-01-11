@@ -70,6 +70,7 @@
 - [Equatable](iOS/Equatable.md)
 - [Comparable](iOS/Comparable.md)
 - [Hashable](Swift/Hashable.md)    
+- [Sendable](Swift/Sendable.md) -> 추후 정리 예정
 - [CaseIterable](Swift/CaseIterable.md)
 
 ---
