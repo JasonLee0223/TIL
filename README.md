@@ -29,7 +29,7 @@
 - [UITapGestureRecognizer](iOS/UITapGestureRecognizer.md)
   
 ## StoryBoard
-- [3 ways to change the screen](ios/StoryBoard/3%20ways%20to%20change%20the%20screen.md)
+- [3 ways to change the screen]([ios/StoryBoard/3%20ways%20to%20change%20the%20screen.md](https://github.com/JasonLee0223/TIL/blob/main/ios/StoryBoard/3%20ways%20to%20change%20the%20screen.md))
 - 
 
 # Swift
