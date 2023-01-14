@@ -33,6 +33,7 @@
 - 
 
 # Swift
+- [~= Operator](Swift/~%3D%20Operator.md)
 - [zip](Swift/zip.md)
 - [Dictionary](Swift/Dictionary.md)
 - [Enum](Swift/Enum.md)   
