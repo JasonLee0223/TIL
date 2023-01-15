@@ -12,6 +12,20 @@
 |Introduce|[Introduce](CS10/Introduce%20CS10.md)|
 |Binary|[Half-Adder](CS10/Half-Adder.md)|
 
+## API Design Guidelines
+### 🪧 Agenda
+|Section|Subject|Explain|   
+|:--|:--|:--|   
+|📕 Fundamentals|[Fundamentals](APIDesignGuideline/Fundamentals.md)|(핵심개념)|
+|📗 Naming|[Promote Clear Usage](APIDesignGuideline/Promote%20Clear%20Usage.md)|(명확하게 사용하기)|
+||[Strive for Fluent Usage](APIDesignGuideline/Strive%20for%20Fluent%20Usage.md)|(자연스러운 사용을 위해 노력하기)|
+||[Use Terminology Well](APIDesignGuideline/Use%20Terminology%20Well.md)|(적절한 기술 용어 사용하기)|
+|📘 Conventions|General Conventions|(일반 규칙)|
+||Parameters |(매개변수)|
+||Argument Labels|(전달인자 레이블)|
+|📙 Special Instructions|Special Instructions|(특별 지침들)|
+|📖 Article|[✏️ Bool 변수 이름 제대로 짓기 위한 최소한의 영문법](Naming/BoolNaming.md)|
+
 # iOS
 |Section|Title|Subject Link|Explain|
 |:--|:--|:--|:--|   
@@ -100,22 +114,6 @@
 - [Sendable](Swift/Sendable.md) -> 추후 정리 예정
 - [CaseIterable](Swift/CaseIterable.md)
 
----
-## API Design Guidelines
-### 🪧 Table of Contents
-- [📕 Fundamentals (핵심개념)](APIDesignGuideline/Fundamentals.md)
-- 📗 Naming
-  - [Promote Clear Usage (명확하게 사용하기)](APIDesignGuideline/Promote%20Clear%20Usage.md)
-  - [Strive for Fluent Usage (자연스러운 사용을 위해 노력하기)](APIDesignGuideline/Strive%20for%20Fluent%20Usage.md)
-  - [Use Terminology Well (적절한 기술 용어 사용하기)](APIDesignGuideline/Use%20Terminology%20Well.md)
-- 📘 Conventions
-  - General Conventions (일반 규칙)
-  - Parameters (매개변수)
-  - Argument Labels (전달인자 레이블)
-- 📙 Special Instructions (특별 지침들)
-
-- [✏️ Bool 변수 이름 제대로 짓기 위한 최소한의 영문법](Naming/BoolNaming.md)
----
 ## Network
 - [REST API](Network/REST%20API.md)   
 - [Process vs Thread](Network/Process%20vs%20Thread.md)
