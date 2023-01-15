@@ -41,9 +41,9 @@
 |Touches, presses, and gestures||[UITapGestureRecognizer](iOS/UITapGestureRecognizer.md)|
 |Menus and shortcuts||[UIAction](iOS/UIAction.md)|
 |Core Graphics|
-|Geometric Data Types|CGPoint|[CGPoint, CGSize, CGRect](iOS/CGPoint,CGSize,CGRect.md)|
-||CGSize|Same as above|
-||CGRect|Same as above|
+|Geometric Data Types||[CGPoint, CGSize, CGRect](iOS/CGPoint,CGSize,CGRect.md)|
+|||CGSize|Same as above|
+|||CGRect|Same as above|
 |OS|
 |Logs|Essentials|
 ||Log Messages|[Logger & OS_Log](iOS/Logger%20&%20OS_Log.md)|
