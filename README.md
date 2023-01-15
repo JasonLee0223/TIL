@@ -2,11 +2,15 @@
 매일매일 학습하여 커밋을 남겨보자!
 
 ## Git
-- [Commit message style](Git/Commit%20message%20style.md)
+|Subject|Link|Explain|
+|:--|:--|:--|
+|Git Commit|[Commit message style](Git/Commit%20message%20style.md)|
 
 ## CS10
-- [Introduce](CS10/Introduce%20CS10.md)
-- [Half-Adder](CS10/Half-Adder.md)
+|Subject|Link|Explain|
+|:--|:--|:--|
+|Introduce|[Introduce](CS10/Introduce%20CS10.md)|
+|Binary|[Half-Adder](CS10/Half-Adder.md)|
 
 # iOS
 - [File System Basics](iOS/FileSystem.md)
