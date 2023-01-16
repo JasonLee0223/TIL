@@ -89,7 +89,7 @@
   - [DIP(Dependency Inversion Principle)](OOP/DIP.md)   
   - [ISP(Interface Segregation Principle)](OOP/ISP.md)   
 - [Struct vs Class](Swift/Struct%20vs%20Class.md)   
-  - [Value type cannot have a stored property that recursively contains it.md](Swift/Value%20type%20cannot%20have%20a%20stored%20property%20that%20recursively%20contains%20it.md)
+  - [Value type cannot have a stored property that recursively contains it](Swift/Value%20type%20cannot%20have%20a%20stored%20property%20that%20recursively%20contains%20it.md)
 
 ## POP (Protocol-Oriented Language)
 ### 🪧 Table of Contents
