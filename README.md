@@ -74,7 +74,7 @@
 # Swift
 |Section|Title|Subject Link|Explain|
 |:--|:--|:--|:--|   
-|01|데이터 타입 고급|typealias|
+|01|데이터 타입 고급|[typealias](Swift/typealias.md)|
 |||Tuple|
 ||Collection Types|Array|
 |||[Dictionary](Swift/Dictionary.md)|
