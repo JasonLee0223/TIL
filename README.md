@@ -72,13 +72,46 @@
 
 
 # Swift
-- [~= Operator](Swift/~%3D%20Operator.md)
-- [zip](Swift/zip.md)
-- [Dictionary](Swift/Dictionary.md)
-- [Enum](Swift/Enum.md)   
-- [readLine()](Swift/readLine().md)
-- [Handling Decimal Point](Swift/Handling%20Decimal%20Point.md)
-- [@escaping Closure](Swift/@escaping%20closure.md) -> 미완료
+|Section|Title|Subject Link|Explain|
+|:--|:--|:--|:--|   
+|01|데이터 타입 고급|typealias|
+|||Tuple|
+||Collection Types|Array|
+|||[Dictionary](Swift/Dictionary.md)|
+|||Set|
+|||[Enumerations](Swift/Enum.md)|
+|||Operator|
+|||Control Flow|
+|||Functions|
+|||Optional|
+|02|Object Oriented Programming with Swift|[Struct & Class](Swift/Struct%20vs%20Class.md)|
+|||Property & Method|
+|||Initialization|
+|||Access Control|
+|03|functional programming with Swift|[Closure](Swift/Closure.md)|
+|||Optional Chaining|
+|||Early-exit|guard-let|
+|||[Higher-order function](Swift/Higher-order%20function.md)|고차함수: map, filter, reduce|
+|||Monad|
+|04|Extension|[Subscript](Swift/Subscript.md)|
+|||[Inheritance](Swift/Inheritance.md)|
+|||Type Casting|as, is|
+|||[Protocol](Swift/Protocol.md)|
+|||Extension|
+|||[Generic](Swift/Generic.md)|
+|||[Protocol Default Implimentations](Swift/ProtocolDafaultImplimentation.md)|프로토콜 초기구현|
+|05|Swift High|Nested Type|
+|||[Pattern](Swift/Pattern.md)|
+|||where|
+|||ARC|
+|||[Error Handling](Swift/Error%20Handling.md)|
+|||Memory Safe|
+|etc||[~= Operator](Swift/~%3D%20Operator.md)|
+|||[zip](Swift/zip.md)|
+|||[readLine()](Swift/readLine().md)|
+|||[@escaping Closure](Swift/@escaping%20closure.md)|미완성|
+|||[Handling Decimal Point](Swift/Handling%20Decimal%20Point.md)|
+|||[First-Class Citizen](Swift/First-Class%20Citizen.md)|1급 객체|
 
 ## OOP(Object Oriented Programming)
 ### 🪧 Table of Contents
@@ -87,26 +120,11 @@
   - [OCP(Open-Close-Principle)](OOP/OCP.md)
   - [LSP(Liskov Substitution Principle)](OOP/LSP.md)   
   - [DIP(Dependency Inversion Principle)](OOP/DIP.md)   
-  - [ISP(Interface Segregation Principle)](OOP/ISP.md)   
-- [Struct vs Class](Swift/Struct%20vs%20Class.md)   
+  - [ISP(Interface Segregation Principle)](OOP/ISP.md)      
   - [Value type cannot have a stored property that recursively contains it](Swift/Value%20type%20cannot%20have%20a%20stored%20property%20that%20recursively%20contains%20it.md)
 
 ## POP (Protocol-Oriented Language)
 ### 🪧 Table of Contents
-- [First-Class Citizen(1급 객체)](Swift/First-Class%20Citizen.md)
-- [Closure Syntax](Swift/Closure.md)
-- [Higher-order function (고차함수)](Swift/Higher-order%20function.md)
-
-## Extension (확장)
-- [Subscript](Swift/Subscript.md)
-- [Inheritance](Swift/Inheritance.md)
-- [Protocol Syntax](Swift/Protocol.md)   
-- [Generic](Swift/Generic.md)
-- [Protocol Default Implimentations(프로토콜 초기구현)](Swift/ProtocolDafaultImplimentation.md)   
-
-## Swift High Class (고급)
-- [Pattern](Swift/Pattern.md)
-- [Error Handling](Swift/Error%20Handling.md)   
 
 ## Commonly used protocols in Swift
 - [Equatable](iOS/Equatable.md)
