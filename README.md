@@ -6,11 +6,36 @@
 |:--|:--|:--|
 |Git Commit|[Commit message style](Git/Commit%20message%20style.md)|
 
-## CS10
-|Subject|Link|Explain|
-|:--|:--|:--|
-|Introduce|[Introduce](CS10/Introduce%20CS10.md)|
-|Binary|[Half-Adder](CS10/Half-Adder.md)|
+## Operating System
+|Section|Title|Explain|
+|:---|:---|:---|
+|01|Introduction to Operating Systems|운영체제란 무엇인가 <br/>운영체제의 목적 <br/>운영체제의 분류 <br/>운영체제의 예 <br/>운영체제의 구조
+|02|System Structure <br/>Program Execution 1|컴퓨터 시스템 구조 <br/>Mode bit <br/>Timer <br/>Device Controller <br/>입출력(I/O)의 수행 <br/>동기식 입출력과 비동기식 입출력 <br/>시스템콜(System Call) <br/>인터럽트(Interrupt)
+||System Structure <br/>Program Execution 2|
+|03|Process 1|
+||Process 2|
+||Process 3|
+|04|Process Management 1|
+||Process Manangement 2|
+|05|CPU Scheduling 1|
+||CPU Scheduling 2 <br/>Process Synchronization 1|
+|06|Process Synchronization 1|
+||Process Synchronization 2|
+||Process Synchronization 3|
+||Process Synchronization 4 (Concurrency Control)|
+|07|Deadlocks 1|
+||Deadlocks 2|
+|08|Memory Management 1|
+||Memory Management 2|
+||Memory Management 3|
+||Memory Management 4|
+|09|Virtual Memory 1|
+||Virtual Memory 2|
+|10|File Systems|
+||File Systems Implementation 1|
+||File Systems Implementation 2|
+|11|Disk Management and Scheduling 1|
+||Disk Management and Scheduling 2|
 
 ## API Design Guidelines
 ### 🪧 Agenda
