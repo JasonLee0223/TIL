@@ -7,12 +7,12 @@
 |Git Commit|[Commit message style](Git/Commit%20message%20style.md)|
 
 ## Operating System
-|Section|Title|Explain|
+|Section|Title|Subject|
 |:---|:---|:---|
 |01|Introduction to Operating Systems|운영체제란 무엇인가 <br/>운영체제의 목적 <br/>운영체제의 분류 <br/>운영체제의 예 <br/>운영체제의 구조
 |02|System Structure <br/>Program Execution 1|컴퓨터 시스템 구조 <br/>Mode bit <br/>Timer <br/>Device Controller <br/>입출력(I/O)의 수행 <br/>동기식 입출력과 비동기식 입출력 <br/>시스템콜(System Call) <br/>인터럽트(Interrupt)
-||System Structure <br/>Program Execution 2|
-|03|Process 1|
+||System Structure <br/>Program Execution 2|컴퓨터 시스템 구조 <br/>인터럽트(Interrupt) <br/>동기식 입출력과 비동기식 입출력 <br/>시스템콜(SystemCall) <br/>DMA(Direct Memory Access) <br/>서로 다른 입출력 명령어 <br/>저장장치 계층 구조 <br/>프로그램의 실행(메모리 load) <br/>커널 주소 공간의 내용 <br/>사용자 프로그램이 사용하는 함수 <br/>프로그램의 실행
+|03|Process 1|프로세스의 개념, 프로세스의 상태(Process State), 프로세스의 개념, 프로세스 상태도, Process Control Block(PCB), 문맥교환(Context Switch), 프로세스를 스케줄링하기 위한 큐, Ready Queue와 다양한 Device Queue, 스케줄러(Scheduler)|
 ||Process 2|
 ||Process 3|
 |04|Process Management 1|
