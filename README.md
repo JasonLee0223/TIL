@@ -10,11 +10,11 @@
 ### 🪧 Agenda
 |Section|Subject|Explain|   
 |:--|:--|:--|   
-|📕 Fundamentals|[Fundamentals](APIDesignGuideline/Fundamentals.md)|(핵심개념)|
-|📗 Naming|[Promote Clear Usage](APIDesignGuideline/Promote%20Clear%20Usage.md)|(명확하게 사용하기)|
-||[Strive for Fluent Usage](APIDesignGuideline/Strive%20for%20Fluent%20Usage.md)|(자연스러운 사용을 위해 노력하기)|
-||[Use Terminology Well](APIDesignGuideline/Use%20Terminology%20Well.md)|(적절한 기술 용어 사용하기)|
-|📘 Conventions|General Conventions|(일반 규칙)|
+|📕 Fundamentals|[Fundamentals](APIDesignGuideline/Fundamentals.md)|핵심개념|
+|📗 Naming|[Promote Clear Usage](APIDesignGuideline/Promote%20Clear%20Usage.md)|명확하게 사용하기|
+||[Strive for Fluent Usage](APIDesignGuideline/Strive%20for%20Fluent%20Usage.md)|자연스러운 사용을 위해 노력하기|
+||[Use Terminology Well](APIDesignGuideline/Use%20Terminology%20Well.md)|적절한 기술 용어 사용하기|
+|📘 Conventions|[General Conventions](APIDesignGuideline/GeneralConventions.md)|일반 규칙|
 ||Parameters |(매개변수)|
 ||Argument Labels|(전달인자 레이블)|
 |📙 Special Instructions|Special Instructions|(특별 지침들)|
