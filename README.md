@@ -69,7 +69,7 @@
 |Section|Title|Subject Link|Explain|
 |:--|:--|:--|:--|   
 |01|데이터 타입 고급|[typealias](Swift/typealias.md)|
-|||Tuple|
+|||[Tuple](Swift/Tuple.md)|
 ||Collection Types|Array|
 |||[Dictionary](Swift/Dictionary.md)|
 |||Set|
