@@ -96,7 +96,7 @@
 |||[Protocol Default Implimentations](Swift/ProtocolDafaultImplimentation.md)|프로토콜 초기구현|
 |05|Swift High|Nested Type|
 |||[Pattern](Swift/Pattern.md)|
-|||where|
+|||[Where](Swift/Where.md)|
 |||ARC|
 |||[Error Handling](Swift/Error%20Handling.md)|
 |||Memory Safe|
