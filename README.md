@@ -16,7 +16,7 @@
 ||[Use Terminology Well](APIDesignGuideline/Use%20Terminology%20Well.md)|적절한 기술 용어 사용하기|
 |📘 Conventions|[General Conventions](APIDesignGuideline/GeneralConventions.md)|일반 규칙|
 ||[Parameters](APIDesignGuideline/Parameters.md)|매개변수|
-||Argument Labels|(전달인자 레이블)|
+||[Argument Labels](APIDesignGuideline/ArgumentLabels.md)|전달인자 레이블|
 |📙 Special Instructions|Special Instructions|(특별 지침들)|
 |📖 Article|[✏️ Bool 변수 이름 제대로 짓기 위한 최소한의 영문법](Naming/BoolNaming.md)|
 
