@@ -19,7 +19,7 @@
 ||[Argument Labels](APIDesignGuideline/ArgumentLabels.md)|전달인자 레이블|
 |📙 Special Instructions|[Special Instructions](APIDesignGuideline/SpecialInstructions.md)|특별 지침들|
 |📖 Article|[✏️ Bool 변수 이름 제대로 짓기 위한 최소한의 영문법](Naming/BoolNaming.md)|
-|🎬 Video|[영어 변수명을 잘 지어보자](Naming/영어변수명을잘지어보자.md)|
+|🎬 Video|[✏️ 영어 변수명을 잘 지어보자](Naming/영어변수명을잘지어보자.md)|
 
 # iOS
 |Section|Title|Subject Link|Explain|
