@@ -107,6 +107,7 @@
 |||[@escaping Closure](Swift/@escaping%20closure.md)|미완성|
 |||[Handling Decimal Point](Swift/Handling%20Decimal%20Point.md)|
 |||[First-Class Citizen](Swift/First-Class%20Citizen.md)|1급 객체|
+|||[MetaType](Swift/MetaType.md)|메타타입<br/>Dynamic MetaType, Static MetaType|
 
 ## OOP(Object Oriented Programming)
 ### 🪧 Table of Contents
