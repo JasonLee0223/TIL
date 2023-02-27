@@ -36,3 +36,7 @@ guard let totalSpend = numberFormatter.string(for: totalLeadTime) else {
             return Errors.failOfFormatToString.localizedDescription
         }
 ```
+
+### 🌐 Reference Site
+[[iOS - swift] Error, LocalizedError, localizedDescription 개념](https://ios-development.tistory.com/849)   
+[LocalizedError | Apple Developer Documentation](https://developer.apple.com/documentation/foundation/localizederror)
