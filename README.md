@@ -63,6 +63,7 @@
 |||[VC간의 데이터 전송방법](iOS/Data%20Transfer%20Process.md)|
 |||[Delegate](iOS/Delegate.md)|
 |||[magnitude & abs()](iOS/magnitude.md)|절대값 구하기|
+|||[pow() & sqrt()](iOS/pow.md)|제곱, 제곱근 구하기|
 |Storyboard|
 |||[3 ways to change the screen](iOS/StoryBoard/3%20ways%20to%20change%20the%20screen.md)|
 
