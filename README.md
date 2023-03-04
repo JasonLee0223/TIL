@@ -52,7 +52,7 @@
 |||UIEvent|
 |||UITouch|
 |||UIPress|
-||Standard gestures|Handling UIKit gestures|
+||Standard gestures|[Handling UIKit gestures](iOS/UserInteractions/HandlingUIKitGestures.md)|
 |||UILongPressGestureRecognizer|
 |||UIPanGestureRecognizer|
 |||UIPinchGestureRecognizer|
