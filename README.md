@@ -47,18 +47,33 @@
 ||Popovers|
 ||Alerts|
 ||Screens|[UIScreen](iOS/UIScreen.md)|
-|Touches, presses, and gestures||[UITapGestureRecognizer](iOS/UITapGestureRecognizer.md)|
-|Menus and shortcuts||[UIAction](iOS/UIAction.md)|
-|Core Graphics|
+|User interactions|Touches, presses, and gestures||
+|||[UITapGestureRecognizer](iOS/UITapGestureRecognizer.md)|
+||Menus and shortcus|
+|||[UIAction](iOS/UIAction.md)|
+||Drags and drop|
+||Pointer interactions|
+||Focus-based navigation|
+|Accessibility for UIKit|
+
+|Section|Title|Subject Link|Explain|
+|:--|:--|:--|:--|   
+|Core Graphics|||
 |Geometric Data Types||[CGPoint, CGSize, CGRect](iOS/CGPoint,CGSize,CGRect.md)|
 |||CGSize|Same as above|
 |||CGRect|Same as above|
+|2D Drawing|
+|Colors and Fonts|
+|||CGColor|
+|||CGFont|
+
+|Section|Title|Subject Link|Explain|
+|:--|:--|:--|:--|   
 |OS|
-|Logs|Essentials|
-||Log Messages|[Logger & OS_Log](iOS/Logger%20&%20OS_Log.md)|
-|Accessibility for UIKit|
 |||[File System Basics](iOS/FileSystem.md)|
 |||[Sandbox 정책과 Files 앱](iOS/SandBox.md)|
+|Logs|Essentials|
+||Log Messages|[Logger & OS_Log](iOS/Logger%20&%20OS_Log.md)|
 |Etc|
 |||[VC간의 데이터 전송방법](iOS/Data%20Transfer%20Process.md)|
 |||[Delegate](iOS/Delegate.md)|
@@ -66,7 +81,6 @@
 |||[pow() & sqrt()](iOS/pow.md)|제곱, 제곱근 구하기|
 |Storyboard|
 |||[3 ways to change the screen](iOS/StoryBoard/3%20ways%20to%20change%20the%20screen.md)|
-
 
 # Swift
 |Section|Title|Subject Link|Explain|
