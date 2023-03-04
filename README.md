@@ -127,7 +127,7 @@
 |05|Swift High|Nested Type|
 |||[Pattern](Swift/Pattern.md)|
 |||[Where](Swift/Where.md)|
-|||ARC|
+|||[ARC](Swift/ARC.md)|
 |||[Error Handling](Swift/Error%20Handling.md)|
 |||Memory Safe|
 |etc||[~= Operator](Swift/~%3D%20Operator.md)|
