@@ -109,6 +109,7 @@
 |||Functions|
 |||Optional|
 |02|Object Oriented Programming with Swift|[Struct & Class](Swift/Struct%20vs%20Class.md)|
+|||[Choosing Between Structures and Class](Swift/ChoosingBetweenStructureAndClass.md)|
 |||Property & Method|
 |||Initialization|
 |||Access Control|
