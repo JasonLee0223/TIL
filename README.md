@@ -47,8 +47,21 @@
 ||Popovers|
 ||Alerts|
 ||Screens|[UIScreen](iOS/UIScreen.md)|
-|User interactions|Touches, presses, and gestures||
+|User interactions|Touches, presses, and gestures|Using responders and respoder chain to handle events|
+|||UIResponder|
+|||UIEvent|
+|||UITouch|
+|||UIPress|
+||Standard gestures|Handling UIKit gestures|
+|||UILongPressGestureRecognizer|
+|||UIPanGestureRecognizer|
+|||UIPinchGestureRecognizer|
+|||UIScreenEdgePanGestureRecognzier|
+|||UISwipeGestureRecognizer|
 |||[UITapGestureRecognizer](iOS/UITapGestureRecognizer.md)|
+||Custom gestures||
+|||UIGestureRecognizer|
+|||UIGestureRecognizerDelegate|
 ||Menus and shortcus|
 |||[UIAction](iOS/UIAction.md)|
 ||Drags and drop|
