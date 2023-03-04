@@ -47,7 +47,7 @@
 ||Popovers|
 ||Alerts|
 ||Screens|[UIScreen](iOS/UIScreen.md)|
-|User interactions|Touches, presses, and gestures|Using responders and respoder chain to handle events|
+|User interactions|[Touches, presses, and gestures](iOS/UserInteractions/Touches,presses,andgestures.md)|[Using responders and respoder chain to handle events](iOS/UserInteractions/UsingRespondersAndResponderChainToHandleEvents.md)|
 |||UIResponder|
 |||UIEvent|
 |||UITouch|
