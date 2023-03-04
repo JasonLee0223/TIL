@@ -128,6 +128,155 @@ let anyType: Any = 10
 type(of: anyType)       // Int.Type
 ```
 
+## MetaType + Protocol Default Implementation
+```Swift
+import Foundation
+
+protocol Automobile {
+    var kind: String { get }
+    var wheel: Int { get }
+    init(kind: String, wheel: Int)
+}
+
+protocol Transportation {
+    var kind: String { get }
+    var wheel: Int { get }
+    init(kind: String, wheel: Int)
+}
+
+protocol Motor {
+    var kind: String { get }
+    var wheel: Int { get }
+    init(kind: String, wheel: Int)
+}
+
+protocol Ridable {
+    func ride()
+}
+
+extension Ridable {
+    func ride() { print("Yoppa 차 뽑았다 널 데리러 가!") }
+}
+
+protocol Flying {
+    func fly()
+}
+
+extension Flying {
+    func fly() { print("레드불이 날개를 달아줬어!!!") }
+}
+
+protocol Rowable {
+    func row()
+}
+
+extension Rowable {
+    func row() { print("영차영차 노를 저어야해") }
+}
+
+protocol Drivable {
+    func drive<T: Automobile>(vehicleType: T.Type) -> T
+    func drive<T: Transportation>(vehicleType: T.Type) -> T
+    func drive<T: Motor>(vehicleType: T.Type) -> T
+}
+
+extension Drivable {
+    func drive<T: Automobile>(vehicleType: T.Type) -> T {
+        switch vehicleType {
+        case is Car.Type:
+            return vehicleType.init(kind: "자동차", wheel: 4)
+        case is Sedan.Type:
+            return vehicleType.init(kind: "세단", wheel: 4)
+        case is Truck.Type:
+            return vehicleType.init(kind: "트럭", wheel: 4)
+        default:
+            fatalError("Wrong Automobile")
+        }
+    }
+    
+    func drive<T: Transportation>(vehicleType: T.Type) -> T {
+        switch vehicleType {
+        case is Bus.Type:
+            return vehicleType.init(kind: "버스", wheel: 4)
+        case is Train.Type:
+            return vehicleType.init(kind: "기차", wheel: 100)
+        case is Boat.Type:
+            return vehicleType.init(kind: "배(보트)", wheel: 0)
+        case is Airplane.Type:
+            return vehicleType.init(kind: "비행기", wheel: 15)
+        default:
+            fatalError("Wrong Transportation")
+        }
+    }
+    
+    func drive<T: Motor>(vehicleType: T.Type) -> T {
+        switch vehicleType {
+        case is Motorcycle.Type:
+            return vehicleType.init(kind: "오토바이", wheel: 2)
+        case is Bicycle.Type:
+            return vehicleType.init(kind: "자전거", wheel: 2)
+        case is Scooter.Type:
+            return vehicleType.init(kind: "스쿠터", wheel: 2)
+        default:
+            fatalError("Wrong Motor")
+        }
+    }
+}
+
+//MARK: - 자동차
+struct Car: Automobile, Ridable {
+    let kind: String
+    let wheel: Int
+}
+
+struct Sedan: Automobile, Ridable  {
+    let kind: String
+    let wheel: Int
+}
+
+struct Truck: Automobile, Ridable {
+    let kind: String
+    let wheel: Int
+}
+
+//MARK: - 대중교통
+struct Bus: Transportation, Ridable, Drivable {
+    let kind: String
+    let wheel: Int
+}
+
+struct Train: Transportation, Ridable, Drivable {
+    let kind: String
+    let wheel: Int
+}
+
+struct Boat: Transportation, Ridable, Drivable, Rowable {
+    let kind: String
+    let wheel: Int
+}
+
+struct Airplane: Transportation, Ridable, Drivable, Flying {
+    let kind: String
+    let wheel: Int
+}
+
+//MARK: - 원동기
+struct Motorcycle: Motor, Ridable, Drivable {
+    let kind: String
+    let wheel: Int
+}
+
+struct Bicycle: Motor, Ridable, Drivable {
+    let kind: String
+    let wheel: Int
+}
+
+struct Scooter: Motor, Ridable, Drivable {
+    let kind: String
+    let wheel: Int
+}
+```
+
 ### 🌐 Reference Site
 
 [Swift) Metatype(.self, .Type, .Protocol) 정복하기 (1/2) - 소들이](https://babbab2.tistory.com/151)   
