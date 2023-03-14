@@ -3,7 +3,7 @@
 > For small interactions with remote servers, you can use the `URLSessionDataTask` class to receive response data into memory (as opposed to using the `URLSessionDownloadTask` class, which stores the data directly to the file system).   
 > A data task is ideal for uses like calling a web service endpoint.
 
-원격 서버와의 작은 상호 작용의 경우 `URLSessionDataTask` 클래스를 사용하여 응답 데이터를 메모리로 수신할 수 있습니다.
+원격 서버와의 작은 상호 작용의 경우 `URLSessionDataTask` 클래스를 사용하여 응답 데이터를 메모리로 수신할 수 있습니다.   
 (데이터를 파일 시스템에 직접 저장하는 `URLSessionDownloadTask` 클래스를 사용하는 것과 반대).
 
 > A data task is ideal for uses like calling a web service endpoint.    
@@ -49,7 +49,7 @@ create one session and share it among them.
 
 ---
 
-## Receive Results with a CompletionHandler (CompletionHandler를 통한 전송 결과 받기)
+## Receive Results with a CompletionHandler <br/>(CompletionHandler를 통한 전송 결과 받기)
 데이터를 가져오는 가장 간단한 방법은 CompletionHandler를 사용하는 dataTask를 만드는 것입니다.   
 이 배열을 통해 작업은 서버의 응답, 데이터 및 가능한 오류를 사용자가 제공하는 CompletionHandler 블록(Block)으로 전달합니다.
 <img src = "https://user-images.githubusercontent.com/92699723/224867355-c7f45c80-6e5b-4f42-bb19-fcea98272b3d.png" width=700>
@@ -114,7 +114,8 @@ Session에서 Delegate를 설정할 수 있습니다.
 
 > With this approach, portions of the data are provided to the urlSession(_:dataTask:didReceive:) method of URLSessionDataDelegate as they arrive, until the transfer finishes or fails with an error.
 
-이 접근 방식을 사용하면 전송이 완료되거나 오류로 실패할 때까지 데이터의 일부가 URLSessionDataDelegate의 urlSession(_:dataTask:didReceive:)의 메서드에 도착하면 제공됩니다.
+이 접근 방식을 사용하면 전송이 완료되거나 오류로 실패할 때까지 데이터의 일부가 URLSessionDataDelegate의     
+urlSession(_:dataTask:didReceive:)의 메서드에 도착하면 제공됩니다.
 
 > The delegate also receives other kinds of events as the transfer proceeds.
 
