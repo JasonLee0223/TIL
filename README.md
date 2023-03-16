@@ -162,7 +162,8 @@
 - [Sendable](Swift/Sendable.md) -> 추후 정리 예정
 - [CaseIterable](Swift/CaseIterable.md)
 
-## Network
+# 🗂️ Foundation
+## 📕 Networking - URL Loading System
 |Section|Subject|   
 |:--|:--|
 |URL Loading System|
@@ -171,23 +172,36 @@
 |URLSessionTask|
 
 - [REST API](Network/REST%20API.md)   
-- [Process vs Thread](Network/Process%20vs%20Thread.md)
-- [Async vs sync](Network/Async%20vs%20sync.md)
-- [Serial vs Concurrent](Network/Serial%20vs%20Concurrent.md)
+
+## 📕 Low-Level Utilities - Process and Threads
+|Section|Subject|Explain|
+|:--|:--|:--|
+|RunLoop Scheduling|||
+||RunLoop|
+||Timer|
+|Threads and Locking||
+||[Process vs Thread](Network/Process%20vs%20Thread.md)| 프로세스와 스레드의 차이|
+||[Async vs sync](Network/Async%20vs%20sync.md)| 비동기와 동기의 차이|
+||[Serial vs Concurrent](Network/Serial%20vs%20Concurrent.md)|단일 스레드와 다중 스레드(동시성) 차이|
+|Operations|||
+||OperationQueue|
+||Operation|
+
+## 📕 Dispatch
 - [GCD(Grand Central Dispatch)](Network/GCD(Grand%20Central%20Dispatch).md)
 
-## Design-Pattern
+## 📗 Design-Pattern
 - [Singleton](Design-Pattern/Singleton.md)
 - [Factory-method](Design-Pattern/Factory-method.md)
 
-## TDD (Test Driven Development)
+## 📕 TDD (Test Driven Development)
 - [Unit Test](TDD/UnitTest.md)
 - [given-when-then](TDD/given-when-then.md)
 - [XCTest](TDD/XCTest.md)
 - [Adding test files to an already created project](TDD/Adding%20test%20files%20to%20an%20already%20created%20project.md)
 - [🌐 Reference Site](TDD/ReferenceSite.md)
 
-## Project - Setting
+## 📗 Project - Setting
 - [Device Setting](Project-Setting/Device%20Setting.md)
 - [Install CocoaPods(M1 Error)](Project-Setting/Install%20Cocoapods.md)
 - [Install RxSwift with CocoaPods(M1 Error)](Project-Setting/Install%20RxSwift%20with%20cocoapods.md)
