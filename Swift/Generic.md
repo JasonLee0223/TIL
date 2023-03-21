@@ -67,6 +67,7 @@ swapTwoValues(&numberOne, &stringTOno)  // Error!! - 같은 타입끼리만 교�
 홀화살괄호 기호 안쪽에 쉼표로 분리한 여러 개의 타입 매개변수를 지정해줄 수 있다.   
 <T, U, V>처럼 말이다.   
 
+---
 ## 2️⃣ 제네릭 타입
 제네릭 타입을 구현하면 사용자 정의 타입인 구조체, 클래스, 열거형 등이 어떤 타입과도 연관되어 동작할 수 있다.   
 Stack이라는 제네릭 컬렉션 타입을 어떻게 만들어 가는지 살펴보자.   
@@ -121,6 +122,7 @@ anyStack.pop()              // [1.0, "2"]
 그래서 Stack<Double>이라고 타입을 선언해준 doubleStack 인스턴스는 Element의 타입으로 Double을 사용한다.   
 동일하게 Element의 타입을 정해주면 그 타입에만 동작하도록 제한할 수 있어 더욱 안전하고 의도한 대로 기능을 사용하도록 유도할 수 있다.
 
+---
 ## 3️⃣ 타입 제약
 제네릭 함수가 처리해야 할 기능이 특정 타입에 한정되어야만 처리할 수 있다던가,   
 제네릭 타입을 특정 프로토콜을 따르는 타입만 사용할 수 있도록 제약을 두어야하는 상황이 발생할 수 있다.    
@@ -161,8 +163,132 @@ BinaryInteger 프로토콜을 준수하는 타입으로 한정해두니 뺄셈 �
 > 스위프트의 표준 라이브러리에 정의되어 있는 프로토콜 중 타입 제약에 자주 사용할 만한 프로토콜에는   
 > Hashable, Equatable, Comparable, Indexable, IteratorProtocol, Error, Colleciton, CustomStringConvertible 등이 있다.
 
-## 4️⃣ 프로토콜의 연관 타입
+---
+## 4️⃣ 프로토콜의 연관 타입 🤯
 프로토콜을 정의할 때 `연관 타입(Associated Type)`을 함께 정의하면 유용할 때가 있다.   
 제네릭에서는 어떤 타입이 들어올 지 모를 때, 타입 매개변수를 통해 '종류는 알 수 없지만, 어떤 타입이 여기에 쓰일 것이다'라고 표현해주었다면   
 **`연관 타입은 타입 매개변수의 그 역할을 프로토콜에서 수행할 수 있도록 만들어진 기능`** 이다.
 
+위 내용을 바탕으로 코드로 표현한다면
+```Swift
+class SomeType<T: Equtable> {
+    var someProperty = T
+
+    func someMethod<T>() {
+
+    }
+}
+```
+위와 같이 어떠한 타입이던 Equtable한 프로토콜은 받을 수 있다는 제네릭의 표현방법이 있다는 것이다. (앞서 확인한 내용)
+그렇다면 `연관 타입`은 어떻게 쓰인다는 것일까?
+```Swift
+protocol Container {
+    associatedtype ItemType
+
+    var count: Int { get }
+
+    mutating func append(_ item: ItemType)
+
+    subscript(i: Int) -> ItemType { get }
+}
+```
+위와 같이 Container 프로토콜안에서 `associatedtype`이라는 `ItemType`을 명시해준다면 (제네릭의 T와 같다)   
+존재하지 않는 타입인 ItemType을 타입 이름으로 활용할 수 있다는 말이다.
+
+다시 한 번 정리하면     
+제네릭의 타입 매개변수(T)와 유사한 기능으로,    
+프로토콜 정의 내부에서 사용할 타입이 **`'그 어떤 것이어도 상관없지만, 하나의 타입임은 분명하다.'`** 라는 의미이다.
+
+그럼 실질적인 예제를 확인해보자.
+```Swift
+struct IntStack: Container {
+    
+    var items = [Int]()
+    
+    mutating func push(_ item: Int) {
+        items.append(item)
+    }
+    
+    /// Container 프로토콜 준수를 위한 구현
+    mutating func append(_ item: Int) {
+        self.push(item)
+    }
+    
+    var count: Int {
+        return items.count
+    }
+    
+    subscript(i: Int) -> Int {
+        return items[i]
+    }
+}
+```
+위의 경우 연관 타입 ItemType 대신에 실제 타입인 Int 타입으로 구현해주었고, 프로토콜의 요구사항을 충족하고 있다.
+왜냐하면 프로토콜에서 ItemType이라는 연관 타입만 정의했을 뿐, 특정 타입을 지정하지 않았기 때문이다.
+하지만 이렇게만 적으면 아래의 에러를 확인할 수 있을 것이다.
+```
+Type 'IntStack' does not confirm to protocol 'Container'
+```
+이 부분은 ItemType 대신 Int 타입을 사용하여 구현했을 뿐이기 때문이고, ItemType을 어떤 타입으로 사용할 지 조금 더 명확히 해주고 싶다면   
+IntStack 구조체 구현부에 `typealias ItmeType = Int`라고 타입 별칭을 지정해줄 수 있다.
+```Swift
+struct IntStack: Container {
+    typealias ItemType = Int
+    
+    var items = [ItemType]()
+    
+    mutating func push(_ item: ItemType) {
+        items.append(item)
+    }
+    
+    mutating func pop() -> ItemType {
+        return items.removeLast()
+    }
+    
+    /// Container 프로토콜 준수를 위한 구현
+    mutating func append(_ item: ItemType) {
+        self.push(item)
+    }
+    
+    var count: Int {
+        return items.count
+    }
+    
+    subscript(i: Int) -> ItemType {
+        return items[i]
+    }
+}
+```
+### 🔥 좀 더 나아가 봅시다!! 
+프로토콜의 연관 타입에 대응하여 실제 타입을 사용할 수도 있지만,   
+제네릭 타입에서는 연관 타입과 타입 매개변수를 대응시킬 수 있습니다.
+```Swift
+struct Stack<Element>: Container {
+    /// 기존 Stack<Element> 구조체 구현
+    
+    var items = [Element]()
+    
+    mutating func push(_ item: Element) {
+        items.append(item)
+    }
+    
+    mutating func pop() -> Element {
+        return items.removeLast()
+    }
+    
+    /// Container 프로토콜 준수를 위한 구현
+    mutating func append(_ item: Element) {
+        self.push(item)
+    }
+    
+    var count: Int {
+        return items.count
+    }
+    
+    subscript(i: Int) -> Element {
+        return items[i]
+    }
+}
+```
+Container 프로토콜을 준수하기 위해 **`Stack 구조처에서 ItemType이라는 연관 타입 대신에`**   
+`Element`라는 타입 매개변수를 사용했음을 볼 수 있습니다. 그럼에도 프로토콜을 완벽히 준수하게됩니다.
