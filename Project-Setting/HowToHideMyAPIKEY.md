@@ -1,5 +1,5 @@
 # How to hide my APIKEY
-
+## 1️⃣ .gitignore 와 .plist 활용
 open API를 사용할 때 보통 회원가입을 하여 사용할 수 있게 되는데     
 GitHub에서 Tracking을 하지 않도록 하는 방법과 프로젝트 내에서도 안전하게 숨겨서 사용해보고자한다.
 
@@ -41,3 +41,27 @@ git update-index --skip-worktree 자신의프로젝트명/API+KEY.plist
 // Example
 git update-index --skip-worktree WeatherForecast/WeatherForecast/Configuration/API+Key.plist
 ```
+
+## 2️⃣ .xcconfig 활용
+위와 동일한 방법이지만 파일을 다르게 저장한다.
+.xcconfig 파일을 생성한다.
+<img src = "https://user-images.githubusercontent.com/92699723/226551849-e5b7643b-91da-4255-a3f8-ca8dc865e341.png" width = 70%>
+
+생성한 .xcconfig 파일 안에 아래와 같이 환경 변수를 정의해준다.
+<img src = "https://user-images.githubusercontent.com/92699723/226552459-f37b9240-c631-4724-822e-0f8aa1641c8d.png" width = 70%>
+
+xcconfig 파일을 설정한 뒤 아래의 프로젝트에서 설정이 이루어져야한다.
+<img src = "https://user-images.githubusercontent.com/92699723/226552985-a256408f-f58d-43d3-ab38-47752d3c4c6b.png" width = 70%>
+
+이후 `Info.plist` 파일에서 api key를 설정한다.
+<img src = "https://user-images.githubusercontent.com/92699723/226553343-35f9a139-435f-4534-b422-888fc7719911.png" width = 70%>
+
+마지막으로 gitignore에 xcconfig를 추적하지 않도록 추가해준다.
+```
+# .XCConfig
+
+*.xcconfig
+```
+
+### 🌐 Reference Site
+[[iOS] Github에서 API KEY를 숨기기 위한 여러가지 방법들](https://leeari95.tistory.com/76)
