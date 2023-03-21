@@ -64,4 +64,5 @@ xcconfig 파일을 설정한 뒤 아래의 프로젝트에서 설정이 이루�
 ```
 
 ### 🌐 Reference Site
-[[iOS] Github에서 API KEY를 숨기기 위한 여러가지 방법들](https://leeari95.tistory.com/76)
+[[iOS] Github에서 API KEY를 숨기기 위한 여러가지 방법들](https://leeari95.tistory.com/76)   
+[Using .xcconfig files the right way for API Keys in an iOS app](https://moinulhassan.medium.com/read-variables-from-env-file-to-xcconfig-files-for-different-schemes-in-xcode-3ef977a0eef8)
