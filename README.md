@@ -159,6 +159,7 @@
 |||[MetaType](Swift/MetaType.md)|
 |||[ObjectIdentifier](Swift/ObjectIdentifier.md)|
 |||[LocalizedError](Swift/LocalizedError.md)|
+|||[Result](Swift/Result.md)
 |||[CoW(Copy on Write)](Swift/CoW.md)|
 
 ## 🔥 OOP(Object Oriented Programming)
