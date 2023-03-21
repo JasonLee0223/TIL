@@ -21,14 +21,14 @@
 |📖 Article|[✏️ Bool 변수 이름 제대로 짓기 위한 최소한의 영문법](Naming/BoolNaming.md)|
 |🎬 Video|[✏️ 영어 변수명을 잘 지어보자](Naming/영어변수명을잘지어보자.md)|
 
-# iOS
-## UIKit
+# 🗂️ iOS
+## 📗 UIKit
 |Section|Title|Subject Link|Explain|
 |:--|:--|:--|:--|   
 |App and environment||[UIKit 설명, App and Environment](iOS/About%20App%20Development%20with%20UIKit.md)|
 |App Structure|Managing your app's life cycle|[ViewController Life-Cycle](iOS/ViewController%20Life-Cycle.md)|
 
-## User Interface
+## 📕 User Interface
 |Section|Title|Subject Link|Explain|
 |:--|:--|:--|:--|   
 |Views and controls|View fundamentals|UIView|
@@ -58,7 +58,7 @@
 ||Alerts|
 ||Screens|[UIScreen](iOS/UIScreen.md)|
 
-## User interactions
+## 📕 User interactions
 |Section|Title|Subject Link|Explain|
 |:--|:--|:--|:--|   
 |[Touches, presses, and gestures](iOS/UserInteractions/Touches,presses,andgestures.md)|[Using responders and respoder chain to handle events](iOS/UserInteractions/UsingRespondersAndResponderChainToHandleEvents.md)|
@@ -88,7 +88,7 @@
 |Focus-based navigation|
 |Accessibility for UIKit|
 
-# Core Graphics
+# 🗂️ Core Graphics
 |Section|Title|Subject Link|Explain|
 |:--|:--|:--|:--|   
 |Geometric Data Types||[CGPoint, CGSize, CGRect](iOS/CGPoint,CGSize,CGRect.md)|
@@ -114,7 +114,7 @@
 |Storyboard|
 |||[3 ways to change the screen](iOS/StoryBoard/3%20ways%20to%20change%20the%20screen.md)|
 
-# Swift
+# 🗂️ Swift
 |Section|Title|Subject Link|Explain|
 |:--|:--|:--|:--|   
 |01|데이터 타입 고급|[typealias](Swift/typealias.md)|
@@ -134,16 +134,16 @@
 |||Access Control|
 |03|functional programming with Swift|[Closure](Swift/Closure.md)|
 |||Optional Chaining|
-|||Early-exit|guard-let|
-|||[Higher-order function](Swift/Higher-order%20function.md)|고차함수: map, filter, reduce|
+|||Early-exit|
+|||[Higher-order function](Swift/Higher-order%20function.md)|
 |||Monad|
 |04|Extension|[Subscript](Swift/Subscript.md)|
 |||[Inheritance](Swift/Inheritance.md)|
-|||Type Casting|as, is|
+|||Type Casting|
 |||[Protocol](Swift/Protocol.md)|
 |||Extension|
 |||[Generic](Swift/Generic.md)|
-|||[Protocol Default Implimentations](Swift/ProtocolDafaultImplimentation.md)|프로토콜 초기구현|
+|||[Protocol Default Implimentations](Swift/ProtocolDafaultImplimentation.md)|
 |05|Swift High|Nested Type|
 |||[Pattern](Swift/Pattern.md)|
 |||[Where](Swift/Where.md)|
@@ -155,13 +155,13 @@
 |||[readLine()](Swift/readLine().md)|
 |||[@escaping Closure](Swift/@escaping%20closure.md)|미완성|
 |||[Handling Decimal Point](Swift/Handling%20Decimal%20Point.md)|
-|||[First-Class Citizen](Swift/First-Class%20Citizen.md)|1급 객체|
-|||[MetaType](Swift/MetaType.md)|메타타입<br/>Dynamic MetaType, <br/>Static MetaType|
+|||[First-Class Citizen](Swift/First-Class%20Citizen.md)|
+|||[MetaType](Swift/MetaType.md)|
 |||[ObjectIdentifier](Swift/ObjectIdentifier.md)|
-|||[LocalizedError](Swift/LocalizedError.md)|Error Handling|
+|||[LocalizedError](Swift/LocalizedError.md)|
 |||[CoW(Copy on Write)](Swift/CoW.md)|
 
-## OOP(Object Oriented Programming)
+## 🔥 OOP(Object Oriented Programming)
 ### 🪧 Table of Contents
 - [SOLID](OOP/SOLID.md)
   - [SRP(Single-Responsibility Principle)](OOP/SRP.md)   
@@ -170,9 +170,6 @@
   - [DIP(Dependency Inversion Principle)](OOP/DIP.md)   
   - [ISP(Interface Segregation Principle)](OOP/ISP.md)      
   - [Value type cannot have a stored property that recursively contains it](Swift/Value%20type%20cannot%20have%20a%20stored%20property%20that%20recursively%20contains%20it.md)
-
-## POP (Protocol-Oriented Language)
-### 🪧 Table of Contents
 
 ## Commonly used protocols in Swift
 - [Equatable](iOS/Equatable.md)
