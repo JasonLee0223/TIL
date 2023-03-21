@@ -188,13 +188,21 @@
 |Essential|[Fetching Website Data into Memory](Network/FetchingWebsiteDataIntoMemory.md)|URLSession에서 데이터 작업을 생성하여 <br/>데이터를 메모리로 직접 수신한다.|
 ||URLSession|관련된 네트워크 데이터 전송 작업 그룹을 조정하는 개체|
 ||URLSessionTask|
+||URLSessionConfiguration|
 |Request and Response|URLRequest|
+||MutableURLRequest|
 ||URLResponse|
 ||HTTPURLResponse|
-|Cookies|HTTPCookie|
+|Cookies<br/>Storage|HTTPCookie|
 ||HTTPCookieStorage|
-|Errors|
-||URLError|
+|Cache|URLCache|
+||CacheURLRequest|
+|Errors|URLError|
+|Protocol Support|URLProtocol|
+|Authentication &<br/>Credentials|URLProtectionSpace|
+||URLCredential|
+||URLCredentialStorage|
+||URLAuthenticationChallenge|
 
 ## 📕 Low-Level Utilities - Process and Threads
 |Section|Subject|Explain|
