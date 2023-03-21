@@ -22,15 +22,22 @@
 |🎬 Video|[✏️ 영어 변수명을 잘 지어보자](Naming/영어변수명을잘지어보자.md)|
 
 # iOS
+## UIKit
 |Section|Title|Subject Link|Explain|
 |:--|:--|:--|:--|   
-|UIKit|
 |App and environment||[UIKit 설명, App and Environment](iOS/About%20App%20Development%20with%20UIKit.md)|
 |App Structure|Managing your app's life cycle|[ViewController Life-Cycle](iOS/ViewController%20Life-Cycle.md)|
-|User Interface|UIView|
+
+## User Interface
+|Section|Title|Subject Link|Explain|
+|:--|:--|:--|:--|   
+|Views and controls|View fundamentals|UIView|
 ||Configuring the bounds and frame rectangles|[var frame vs var bounds](iOS/Frame%20vs%20Bounds.md)|
 |||var bounds|Same as above|
-||Container Views|[UIStackView](iOS/UIStackView.md)|
+||Container Views|CollectionViews|
+|||TableViews|
+|||[UIStackView](iOS/UIStackView.md)|
+|||UIScrollView|
 ||Content Views|[UIImageView](https://github.com/JasonLee0223/TIL/blob/main/iOS/UIImageVIew.md)|
 ||Controls|[UIButton](iOS/UIButton.md)|
 |||[UIButton.Configuration](iOS/UIButton.Configuration.md)|
@@ -42,12 +49,19 @@
 ||Content Viewer|
 ||Private Click Measurement (PCM)|
 ||SwiftUI|
+|View controllers|
+|View layout|
+|Animation and haptics|
 |Windows and screens|Windows|
 ||Scenes|
 ||Popovers|
 ||Alerts|
 ||Screens|[UIScreen](iOS/UIScreen.md)|
-|User interactions|[Touches, presses, and gestures](iOS/UserInteractions/Touches,presses,andgestures.md)|[Using responders and respoder chain to handle events](iOS/UserInteractions/UsingRespondersAndResponderChainToHandleEvents.md)|
+
+## User interactions
+|Section|Title|Subject Link|Explain|
+|:--|:--|:--|:--|   
+|[Touches, presses, and gestures](iOS/UserInteractions/Touches,presses,andgestures.md)|[Using responders and respoder chain to handle events](iOS/UserInteractions/UsingRespondersAndResponderChainToHandleEvents.md)|
 |||UIResponder|
 |||UIEvent|
 |||UITouch|
@@ -67,11 +81,16 @@
 ||Drags and drop|
 ||Pointer interactions|
 ||Focus-based navigation|
+|Menus and shortcuts|
+|Drag and drop|
+|Pointer interactions|
+|Pencil interactions|
+|Focus-based navigation|
 |Accessibility for UIKit|
 
+# Core Graphics
 |Section|Title|Subject Link|Explain|
 |:--|:--|:--|:--|   
-|Core Graphics|||
 |Geometric Data Types||[CGPoint, CGSize, CGRect](iOS/CGPoint,CGSize,CGRect.md)|
 |||CGSize|Same as above|
 |||CGRect|Same as above|
@@ -80,14 +99,14 @@
 |||CGColor|
 |||CGFont|
 
+# ETC
 |Section|Title|Subject Link|Explain|
 |:--|:--|:--|:--|   
-|OS|
 |||[File System Basics](iOS/FileSystem.md)|
 |||[Sandbox 정책과 Files 앱](iOS/SandBox.md)|
 |Logs|Essentials|
 ||Log Messages|[Logger & OS_Log](iOS/Logger%20&%20OS_Log.md)|
-|Etc|
+|||
 |||[VC간의 데이터 전송방법](iOS/Data%20Transfer%20Process.md)|
 |||[Delegate](iOS/Delegate.md)|
 |||[magnitude & abs()](iOS/magnitude.md)|절대값 구하기|
@@ -164,6 +183,8 @@
 
 # 🗂️ Foundation
 ## 📕 Networking - URL Loading System
+- [REST API](Network/REST%20API.md)   
+
 |Section|Subject|Explain|   
 |:--|:--|:--|
 |Essential|[Fetching Website Data into Memory](Network/FetchingWebsiteDataIntoMemory.md)|URLSession에서 데이터 작업을 생성하여 <br/>데이터를 메모리로 직접 수신한다.|
@@ -176,8 +197,6 @@
 ||HTTPCookieStorage|
 |Errors|
 ||URLError|
-
-- [REST API](Network/REST%20API.md)   
 
 ## 📕 Low-Level Utilities - Process and Threads
 |Section|Subject|Explain|
