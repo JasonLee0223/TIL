@@ -153,7 +153,7 @@
 |etc||[~= Operator](Swift/~%3D%20Operator.md)|
 |||[zip](Swift/zip.md)|
 |||[readLine()](Swift/readLine().md)|
-|||[@escaping Closure](Swift/@escaping%20closure.md)|미완성|
+|||[@escaping Closure](Swift/@escaping%20closure.md)|
 |||[Handling Decimal Point](Swift/Handling%20Decimal%20Point.md)|
 |||[First-Class Citizen](Swift/First-Class%20Citizen.md)|
 |||[MetaType](Swift/MetaType.md)|
