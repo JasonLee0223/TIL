@@ -201,7 +201,7 @@
 ||HTTPURLResponse|
 |Cookies<br/>Storage|HTTPCookie|
 ||HTTPCookieStorage|
-|Cache|URLCache|
+|Cache|[URLCache](Network/URLCache.md)|인메모리 & 온디스크 방식 Cache|
 ||CacheURLRequest|
 |Errors|URLError|
 |Protocol Support|URLProtocol|
