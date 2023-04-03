@@ -31,7 +31,7 @@
 ## 📕 User Interface
 |Section|Title|Subject Link|Explain|
 |:--|:--|:--|:--|   
-|Views and controls|View fundamentals|UIView|
+|Views and controls|View fundamentals|[UIView](iOS/UIView.md)|
 ||Configuring the bounds and frame rectangles|[var frame vs var bounds](iOS/Frame%20vs%20Bounds.md)|
 |||var bounds|Same as above|
 ||Container Views|CollectionViews|[Organize in Notion](https://stealth-cello-d48.notion.site/CollectionView-ccf36ac5e9914955a07d76491ca4b8d3)|
