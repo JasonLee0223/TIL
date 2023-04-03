@@ -54,4 +54,7 @@ View를 업데이트하기 위해 다음 Drawing Cycle까지 기다리기 때문
 > OpenGL ES를 사용하여 drawing을 그리는 경우 UIView를 서브클래싱하는 대신 GLKView 클래스를 사용해야 합니다.     
 > OpenGL ES를 사용하여 그리는 방법에 대한 자세한 내용은 [OpenGL ES Programming Guide](https://developer.apple.com/library/archive/documentation/3DDrawing/Conceptual/OpenGLES_ProgrammingGuide/Introduction/Introduction.html#//apple_ref/doc/uid/TP40008793)를 참고합니다.
 
-View drawing cycle 및 이 cycle에서 View의 역할에 대한 자세한 내용은 [View Programming Guide for iOS](https://developer.apple.com/library/archive/documentation/WindowsViews/Conceptual/ViewPG_iPhoneOS/Introduction/Introduction.html#//apple_ref/doc/uid/TP40009503)를 참조합니다.
+View drawing cycle 및 이 cycle에서 View의 역할에 대한 자세한 내용은 [View Programming Guide for iOS](https://developer.apple.com/library/archive/documentation/WindowsViews/Conceptual/ViewPG_iPhoneOS/Introduction/Introduction.html#//apple_ref/doc/uid/TP40009503)를 참조합니다.     
+
+### 🌐 Reference Site
+[UIView | Apple Developer Documents](https://developer.apple.com/documentation/uikit/uiview)
