@@ -37,6 +37,8 @@ center 속성은 frame과 bounds 속성을 직접 변경하지 않고 View 위�
 
 UIView 클래스 사용 방법에 대한 자세한 내용은 [View Programming Guide for iOS](https://developer.apple.com/library/archive/documentation/WindowsViews/Conceptual/ViewPG_iPhoneOS/Introduction/Introduction.html#//apple_ref/doc/uid/TP40009503)를 참고합니다.
 
+---
+
 ## Draw views
 View drawing는 필요에 따라 발생합니다.      
 View가 처음 표시되거나 Layout 변경으로 인해 전체 또는 일부가 표시될 때 시스템은 View에 Contents를 그리도록 요청합니다.  
@@ -48,7 +50,7 @@ View의 실제 내용이 변경되면 View를 다시 그려야 함을 시스템�
 View의 `setNeedsDisplay()` 또는 `setNeedDisplay(_:)` 메서드를 호출하여 이를 수행합니다.     
 이러한 메서드를 통해 시스템은 다음 Drawing cycle동안 View를 업데이트해야 함을 알 수 있습니다.   
 View를 업데이트하기 위해 다음 Drawing Cycle까지 기다리기 때문에 여러 View에서 이러한 메서드를 호출하여 동시에 업데이트할 수 있습니다.   
-> Note
+> Note  
 > OpenGL ES를 사용하여 drawing을 그리는 경우 UIView를 서브클래싱하는 대신 GLKView 클래스를 사용해야 합니다.     
 > OpenGL ES를 사용하여 그리는 방법에 대한 자세한 내용은 [OpenGL ES Programming Guide](https://developer.apple.com/library/archive/documentation/3DDrawing/Conceptual/OpenGLES_ProgrammingGuide/Introduction/Introduction.html#//apple_ref/doc/uid/TP40008793)를 참고합니다.
 
