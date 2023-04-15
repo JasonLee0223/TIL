@@ -162,6 +162,7 @@
 |||[LocalizedError](Swift/LocalizedError.md)|
 |||[Result](Swift/Result.md)
 |||[🔥 CoW(Copy on Write)](Swift/CoW.md)|
+|||[KVO(Key-Value Observing)](Swift/KVO(KeyValueObserving).md)|Data Binding|
 
 ## 🔥 OOP(Object Oriented Programming)
 ### 🪧 Table of Contents
